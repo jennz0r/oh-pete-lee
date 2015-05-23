@@ -104,6 +104,10 @@ switch(location.href) {
 
 $('body').prepend(html);
 
+$(document).ready(function(){
+  $(".video__outer").fitVids();
+});
+
 $(document).foundation();
 
 

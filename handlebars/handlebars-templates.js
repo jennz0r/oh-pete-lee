@@ -35,5 +35,6 @@ this["JST"]["handlebars/photography.hbs"] = Handlebars.template({"compiler":[6,"
 this["JST"]["handlebars/videography.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "");
+  return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "")
+    + "\n<div class=\"row  mv\">\n	<div class=\"small-12  medium-6  large-4  columns\">\n		<div class=\"video__outer\">\n			<iframe src=\"https://player.vimeo.com/video/125626176?badge='0&byline='0'&color='f2002b'&portrait='0'&title='0'\" frameborder=\"0\" width=\"500\" height=\"281\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n			<div class=\"video__overlay\">\n				<p><a href=\"https://vimeo.com/125626176\">100 OpenTables: Brand Video</a> from <a href=\"https://vimeo.com/petelee\">Peter Lee</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>\n			</div>\n		</div>\n	</div>\n</div>";
 },"usePartial":true,"useData":true});
