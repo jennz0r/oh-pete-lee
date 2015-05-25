@@ -40,6 +40,14 @@
 //   "foundation/components/offcanvas",
      "foundation/components/visibility";
 
+body {
+  background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .mv {
   margin-top: 32px;
   margin-bottom: 32px;

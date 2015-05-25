@@ -117,7 +117,7 @@ $(document).ready(function(){
   var homePhotoURLs = [
     'https://farm8.staticflickr.com/7246/8155561235_ac9e5b2cde_o.jpg',
     'https://farm8.staticflickr.com/7153/6675594551_11a1ce9c28_o.jpg',
-    ''
+    'https://farm8.staticflickr.com/7350/12799015685_6aa3122f86_o.jpg',
   ];
 
   if (location.href == 'file:///Users/Jenn/Projects/old-pete-lee/index.html') {
