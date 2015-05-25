@@ -120,11 +120,30 @@ $(document).ready(function(){
     'https://farm8.staticflickr.com/7350/12799015685_6aa3122f86_o.jpg',
   ];
 
-  if (location.href == 'file:///Users/Jenn/Projects/old-pete-lee/index.html') {
-    var randomImgURL;
-    randomImgURL = homePhotoURLs[Math.floor(Math.random() * homePhotoURLs.length)];
-    $('body').css('background-image', 'url(' + randomImgURL + ')');
+  var randomImgURL;
+  randomImgURL = homePhotoURLs[Math.floor(Math.random() * homePhotoURLs.length)];
+  $('body').css('background-image', 'url(' + randomImgURL + ')');
+
+  if (location.href !== 'file:///Users/Jenn/Projects/old-pete-lee/index.html') {
+    var docHeight = $(document).height();
+    $('body').append('<div class="overlay"></div>');
+    $('.overlay')
+      .height(docHeight)
+      .css({
+         'opacity' : 0.8,
+         'position': 'absolute',
+         'top': 0,
+         'left': 0,
+         'background-color': '#333',
+         'width': '100%',
+      });
   }
+
+});
+
+// Add shadow only after asset load
+$(window).load(function() {
+  $('iframe').css('box-shadow', '0 0 5px 0 #222');
 });
 
 $(document).foundation();

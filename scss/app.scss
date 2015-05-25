@@ -48,6 +48,10 @@ body {
   background-size: cover;
 }
 
+.top-bar, .columns {
+  z-index: 1;
+}
+
 .mv {
   margin-top: 32px;
   margin-bottom: 32px;
