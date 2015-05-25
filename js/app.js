@@ -15,7 +15,14 @@ var dataMusic = {
   narrative_url: '../narrative',
   edible_url: '../edible',
   professional_url: '../photography/professional',
-  personal_url: '../photography/personal'
+  personal_url: '../photography/personal',
+  videos: [{
+    id: '125626176',
+    title: '100 OpenTables: Brand Video'
+  }, {
+    id: '12',
+    title: 'a guess'
+  }]
 };
 
 var dataCommercial = {
