@@ -20,8 +20,11 @@ var dataMusic = {
     id: '125626176',
     title: '100 OpenTables: Brand Video'
   }, {
-    id: '12',
-    title: 'a guess'
+    id: '124724818',
+    title: 'Sols - Live Your Life'
+  }, {
+    id: '120522773',
+    title: 'Meklit Hadero feat. Samuel Yirga - Kemekem'
   }]
 };
 
@@ -130,11 +133,11 @@ $(document).ready(function(){
     $('.overlay')
       .height(docHeight)
       .css({
-         'opacity' : 0.8,
+         'opacity' : 0.75,
          'position': 'absolute',
          'top': 0,
          'left': 0,
-         'background-color': '#333',
+         'background-color': 'white',
          'width': '100%',
       });
   }
@@ -143,7 +146,7 @@ $(document).ready(function(){
 
 // Add shadow only after asset load
 $(window).load(function() {
-  $('iframe').css('box-shadow', '0 0 5px 0 #222');
+  $('.video__outer').css('box-shadow', '0 0 5px 0 #222');
 });
 
 $(document).foundation();

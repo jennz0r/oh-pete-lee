@@ -35,7 +35,7 @@ this["JST"]["handlebars/photography.hbs"] = Handlebars.template({"compiler":[6,"
 this["JST"]["handlebars/videography.hbs"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
     var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
-  return "	<div class=\"small-12  medium-6  large-4  columns\">\n		<div class=\"video__outer\">\n			<iframe src=\"https://player.vimeo.com/video/"
+  return "	<div class=\"small-12  medium-6  large-4  columns  mv2x\">\n		<div class=\"video__outer\">\n			<iframe src=\"https://player.vimeo.com/video/"
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
     + "?badge='0&byline='0'&color='f2002b'&portrait='0'&title='0'\" frameborder=\"0\" width=\"500\" height=\"281\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n			<div class=\"video__overlay\">\n				<p><a href=\"https://vimeo.com/"
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
@@ -46,7 +46,7 @@ this["JST"]["handlebars/videography.hbs"] = Handlebars.template({"1":function(de
     var stack1;
 
   return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "")
-    + "\n<div class=\"row  mv\">\n"
+    + "\n<div class=\"row  mv4x\">\n"
     + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.videos : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + "</div>";
 },"usePartial":true,"useData":true});
