@@ -17,14 +17,38 @@ var dataMusic = {
   professional_url: '../photography/professional',
   personal_url: '../photography/personal',
   videos: [{
-    id: '125626176',
-    title: '100 OpenTables: Brand Video'
-  }, {
-    id: '124724818',
-    title: 'Sols - Live Your Life'
-  }, {
     id: '120522773',
     title: 'Meklit Hadero feat. Samuel Yirga - Kemekem'
+  }, {
+    id: '91651414',
+    title: 'Atmosphere - Kanye West (Official Music Video)'
+  }, {
+    id: '79086655',
+    title: 'Extranjero'
+  }, {
+    id: '67242039',
+    title: 'Patton Oswalt does the Magic Clap'
+  }, {
+    id: '62309914',
+    title: 'The Uncluded - Delicate Cycle'
+  }, {
+    id: '54213282',
+    title: 'Wolf Larsen - If I Be Wrong'
+  }, {
+    id: '49484881',
+    title: 'Aesop Rock - ZZZ Top'
+  }, {
+    id: '49484882',
+    title: 'Aesop Rock - Cycles to Gehenna'
+  }, {
+    id: '79146873',
+    title: 'Megan Keely - Just Enough Time'
+  }, {
+    id: '49483012',
+    title: "The Coup's Magic Clap"
+  }, {
+    id: '30934752',
+    title: 'Behind the Eyelids Presents: John Heart Jackie'
   }]
 };
 

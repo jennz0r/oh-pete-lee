@@ -57,6 +57,11 @@ body {
   margin-bottom: 32px;
 }
 
+.mv3x {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 .mv2x {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -75,16 +80,25 @@ body {
   padding: 10px;
   background-color: rgba(102, 102, 102, 0);
   text-align: center;
-  transition: background-color 0.7s ease;
+  transition: background-color 0.5s ease;
+  pointer-events: none;
   p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
-    transition: opacity 0.7s ease;
+    transition: opacity 0.5s ease;
+    color: white;
+    pointer-events: auto;
   }
 }
 
-.video__overlay:hover {
-  background-color: rgba(102, 102, 102, 0.75);
-  p {
-    opacity: 1;
+.video__outer:hover {
+  .video__overlay {
+    background-color: rgba(51, 51, 51, 0.9);
+    p {
+      opacity: 1;
+    }
   }
 }
