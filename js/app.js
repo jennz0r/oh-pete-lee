@@ -135,10 +135,10 @@ $(document).ready(function(){
       htmlFunction = JST['handlebars/videography.hbs'];
       html = htmlFunction(dataMusic);
       break;
-    case "file:///Users/Jenn/Projects/old-pete-lee/branded/index.html":
-      htmlFunction = JST['handlebars/videography.hbs'];
-      html = htmlFunction(dataBranded);
-      break;
+    // case "file:///Users/Jenn/Projects/old-pete-lee/branded/index.html":
+    //   htmlFunction = JST['handlebars/videography.hbs'];
+    //   html = htmlFunction(dataBranded);
+    //   break;
     case "file:///Users/Jenn/Projects/old-pete-lee/narrative/index.html":
       htmlFunction = JST['handlebars/videography.hbs'];
       html = htmlFunction(dataNarrative);
