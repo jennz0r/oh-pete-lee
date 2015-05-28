@@ -1,9 +1,8 @@
 var dataIndex = {
   home_url: '',
 	music_url: 'music',
-	commercial_url: 'commercial',
+	branded_url: 'branded',
 	narrative_url: 'narrative',
-	edible_url: 'edible',
 	professional_url: 'photography/professional',
 	personal_url: 'photography/personal'
 };
@@ -11,9 +10,8 @@ var dataIndex = {
 var dataMusic = {
   home_url: '../',
   music_url: '',
-  commercial_url: '../commercial',
+  branded_url: '../branded',
   narrative_url: '../narrative',
-  edible_url: '../edible',
   professional_url: '../photography/professional',
   personal_url: '../photography/personal',
   videos: [{
@@ -52,42 +50,64 @@ var dataMusic = {
   }]
 };
 
-var dataCommercial = {
+var dataBranded = {
   home_url: '../',
   music_url: '../music',
-  commercial_url: '',
+  branded_url: '',
   narrative_url: '../narrative',
-  edible_url: '../edible',
   professional_url: '../photography/professional',
-  personal_url: '../photography/personal'
+  personal_url: '../photography/personal',
+  videos: [{
+    id: '125626176',
+    title: '100 OpenTables: Brand Video'
+  }, {
+    id: '124724818',
+    title: 'Sols - Live Your Life'
+  }, {
+    id: '108527682',
+    title: 'Basis Peak by Intel: Brand Video'
+  }, {
+    id: '92594646',
+    title: 'Cirq - Russia River Valley'
+  }, {
+    id: '73995049',
+    title: "Robert Mondavi's Coastal Crush (extended cut)"
+  }, {
+    id: '92575084',
+    title: 'Craft - by Cost Plus World Market'
+  }, {
+    id: '128915836',
+    title: 'Calphalon YOURSET Heirloom Tomato Sauce Recipe'
+  }]
 };
 
 var dataNarrative = {
   home_url: '../',
   music_url: '../music',
-  commercial_url: '../commercial',
+  branded_url: '../branded',
   narrative_url: '',
-  edible_url: '../edible',
   professional_url: '../photography/professional',
-  personal_url: '../photography/personal'
-};
-
-var dataEdible = {
-  home_url: '../',
-  music_url: '../music',
-  commercial_url: '../commercial',
-  narrative_url: '../narrative',
-  edible_url: '',
-  professional_url: '../photography/professional',
-  personal_url: '../photography/personal'
+  personal_url: '../photography/personal',
+  videos: [{
+    id: '79282772',
+    title: 'Rope a Dope'
+  }, {
+    id: '116523821',
+    title: 'Rope A Dope 2'
+  }, {
+    id: '91651414',
+    title: 'Atmosphere - Kanye West (Official Music Video)'
+  }, {
+    id: '49484881',
+    title: 'Aesop Rock - ZZZ Top'
+  }]
 };
 
 var dataProfessional = {
   home_url: '../../',
   music_url: '../../music',
-  commercial_url: '../../commercial',
+  branded_url: '../../branded',
   narrative_url: '../../narrative',
-  edible_url: '../../edible',
   professional_url: '',
   personal_url: '../personal'
 };
@@ -95,50 +115,48 @@ var dataProfessional = {
 var dataPersonal = {
   home_url: '../../',
   music_url: '../../music',
-  commercial_url: '../../commercial',
+  branded_url: '../../branded',
   narrative_url: '../../narrative',
-  edible_url: '../../edible',
   professional_url: '../professional',
   personal_url: ''
 };
 
 var htmlFunction, html;
 
-// Change cases to live URL before launch
-switch(location.href) {
-  case "file:///Users/Jenn/Projects/old-pete-lee/index.html":
-    htmlFunction = JST['handlebars/index.hbs'];
-    html = htmlFunction(dataIndex);
-    break;
-  case "file:///Users/Jenn/Projects/old-pete-lee/music/index.html":
-    htmlFunction = JST['handlebars/videography.hbs'];
-    html = htmlFunction(dataMusic);
-    break;
-  case "file:///Users/Jenn/Projects/old-pete-lee/commercial/index.html":
-    htmlFunction = JST['handlebars/videography.hbs'];
-    html = htmlFunction(dataCommercial);
-    break;
-  case "file:///Users/Jenn/Projects/old-pete-lee/narrative/index.html":
-    htmlFunction = JST['handlebars/videography.hbs'];
-    html = htmlFunction(dataNarrative);
-    break;
-  case "file:///Users/Jenn/Projects/old-pete-lee/edible/index.html":
-    htmlFunction = JST['handlebars/videography.hbs'];
-    html = htmlFunction(dataEdible);
-    break;
-  case "file:///Users/Jenn/Projects/old-pete-lee/photography/professional/index.html":
-    htmlFunction = JST['handlebars/photography.hbs'];
-    html = htmlFunction(dataProfessional);
-    break;
-  case "file:///Users/Jenn/Projects/old-pete-lee/photography/personal/index.html":
-    htmlFunction = JST['handlebars/photography.hbs'];
-    html = htmlFunction(dataPersonal);
-    break;
-}
-
-$('body').prepend(html);
-
 $(document).ready(function(){
+
+  // Change cases to live URL before launch
+  switch(location.href) {
+    case "file:///Users/Jenn/Projects/old-pete-lee/index.html":
+      htmlFunction = JST['handlebars/index.hbs'];
+      html = htmlFunction(dataIndex);
+      break;
+    case "file:///Users/Jenn/Projects/old-pete-lee/music/index.html":
+      htmlFunction = JST['handlebars/videography.hbs'];
+      html = htmlFunction(dataMusic);
+      break;
+    case "file:///Users/Jenn/Projects/old-pete-lee/branded/index.html":
+      htmlFunction = JST['handlebars/videography.hbs'];
+      html = htmlFunction(dataBranded);
+      break;
+    case "file:///Users/Jenn/Projects/old-pete-lee/narrative/index.html":
+      htmlFunction = JST['handlebars/videography.hbs'];
+      html = htmlFunction(dataNarrative);
+      break;
+    case "file:///Users/Jenn/Projects/old-pete-lee/photography/professional/index.html":
+      htmlFunction = JST['handlebars/photography.hbs'];
+      html = htmlFunction(dataProfessional);
+      break;
+    case "file:///Users/Jenn/Projects/old-pete-lee/photography/personal/index.html":
+      htmlFunction = JST['handlebars/photography.hbs'];
+      html = htmlFunction(dataPersonal);
+      break;
+  }
+
+  // Prepend the template to the body
+  $('body').prepend(html);
+
+  // Use fit vids to make videos responsive
   $(".video__outer").fitVids();
 
   var homePhotoURLs = [
