@@ -26,7 +26,7 @@
 //   "foundation/components/panels",
 //   "foundation/components/pricing-tables",
 //   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
+     "foundation/components/reveal",
 //   "foundation/components/side-nav",
 //   "foundation/components/split-buttons",
 //   "foundation/components/sub-nav",
@@ -46,25 +46,16 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: -2;
 }
 
-.top-bar, .columns {
-  z-index: 1;
+.overlay {
+  z-index: -1;
 }
 
 .mv4x {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-.mv3x {
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-.mv2x {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .video__outer {

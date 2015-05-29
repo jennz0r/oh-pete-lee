@@ -1,15 +1,19 @@
 {{> nav}}
 
-<div class="row  mv4x">
-	{{#each videos}}<!--
- --><div class="small-12  medium-6  columns  mv3x">
-		<div class="video__outer">
-			<h1>{{id}}</h1>
-			<iframe src="https://player.vimeo.com/video/{{id}}?badge='0'&byline='0'&color='f2002b'&portrait='0'&title='0'" frameborder="0" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			<div class="video__overlay">
-				<p><a href="https://vimeo.com/{{id}}" target="_blank">{{title}}</a> from <a href="https://vimeo.com/petelee">Peter Lee</a>.</p>
-			</div>
-		</div>
-	</div><!--
--->{{/each}}
+<div class="row">
+  <div class="columns">
+    <ul class="small-block-grid-1  medium-block-grid-2  large-block-grid-3  mv4x">
+    	{{#each videos}}<!--
+     --><li>
+    		<div class="video__outer">
+    			<!-- <iframe src="https://player.vimeo.com/video/{{id}}?badge='0'&byline='0'&color='f2002b'&portrait='0'&title='0'" frameborder="0" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+          <img src="{{thumbnailUrl}}">
+    			<div class="video__overlay">
+    				<p><a href="https://vimeo.com/{{id}}" target="_blank">{{title}}</a> from <a href="https://vimeo.com/petelee" target="_blank">Peter Lee</a></p>
+    			</div>
+    		</div>
+    	</li><!--
+    -->{{/each}}
+    </ul>
+  </div>
 </div>
