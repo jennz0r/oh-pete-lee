@@ -3,16 +3,22 @@
 <div class="row">
   <div class="columns">
     <ul class="small-block-grid-1  medium-block-grid-2  large-block-grid-3  mv4x">
-    	{{#each videos}}<!--
-     --><li>
-    		<div class="video__outer">
-    			<!-- <iframe src="https://player.vimeo.com/video/{{id}}?badge='0'&byline='0'&color='f2002b'&portrait='0'&title='0'" frameborder="0" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+      {{#each videos}}<!--
+   --><li>
+        <div class="video__outer">
           <img src="{{thumbnailUrl}}">
-    			<div class="video__overlay">
-    				<p><a href="https://vimeo.com/{{id}}" target="_blank">{{title}}</a> from <a href="https://vimeo.com/petelee" target="_blank">Peter Lee</a></p>
-    			</div>
-    		</div>
-    	</li><!--
+          <div class="video__overlay" data-reveal-id="videoModal{{id}}">
+            <p><a href="https://vimeo.com/{{id}}" target="_blank">{{title}}</a></p>
+          </div>
+        </div>
+      </li>
+      <div id="videoModal{{id}}" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
+        <h2 id="videoModalTitle">This modal has video</h2>
+        <div class="flex-video widescreen vimeo">
+          <iframe src="https://player.vimeo.com/video/{{id}}?badge='0'&byline='0'&color='f2002b'&portrait='0'&title='0'" frameborder="0" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+      </div><!--
     -->{{/each}}
     </ul>
   </div>

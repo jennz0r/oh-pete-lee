@@ -68,11 +68,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 10px;
   background-color: rgba(102, 102, 102, 0);
   text-align: center;
   transition: background-color 0.5s ease;
-  pointer-events: none;
   p {
     position: absolute;
     top: 50%;
@@ -81,7 +79,6 @@ body {
     opacity: 0;
     transition: opacity 0.5s ease;
     color: white;
-    pointer-events: auto;
   }
 }
 
