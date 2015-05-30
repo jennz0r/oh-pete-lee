@@ -1134,14 +1134,14 @@ $primary-color: #f2002b;
 // $reveal-position-top: rem-calc(100);
 // $reveal-default-width: 80%;
 // $reveal-max-width: $row-width;
-// $reveal-modal-padding: rem-calc(20);
+   $reveal-modal-padding: rem-calc(10);
 // $reveal-box-shadow: 0 0 10px rgba($black,.4);
 
 // We use these to style the reveal close button
-// $reveal-close-font-size: rem-calc(40);
-// $reveal-close-top: rem-calc(10);
-// $reveal-close-side: rem-calc(22);
-// $reveal-close-color: $base;
+   $reveal-close-font-size: rem-calc(24);
+   $reveal-close-top: rem-calc(-10);
+   $reveal-close-side: rem-calc(-10);
+   $reveal-close-color: #333;
 // $reveal-close-weight: $font-weight-bold;
 
 // We use this to set the default radius used throughout the core.
