@@ -178,7 +178,7 @@ $(document).ready(function(){
   $('body').prepend(html);
 
   // Use fit vids to make videos responsive
-  $(".video__outer").fitVids();
+  $(".modal__video").fitVids();
 
   var homePhotoURLs = [
     'https://farm8.staticflickr.com/7246/8155561235_ac9e5b2cde_o.jpg',
