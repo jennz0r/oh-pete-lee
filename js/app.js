@@ -148,27 +148,27 @@ var htmlFunction, html;
 $(document).ready(function(){
   // Change cases to live URL before launch
   switch(location.href) {
-    case "file:///Users/Jenn/Projects/old-pete-lee/index.html":
+    case "http://ohpetelee.com/":
       htmlFunction = JST['handlebars/index.hbs'];
       html = htmlFunction(dataIndex);
       break;
-    case "file:///Users/Jenn/Projects/old-pete-lee/music/index.html":
+    case "http://ohpetelee.com/music/":
       htmlFunction = JST['handlebars/videography.hbs'];
       html = htmlFunction(dataMusic);
       break;
-    case "file:///Users/Jenn/Projects/old-pete-lee/branded/index.html":
+    case "http://ohpetelee.com/branded/":
       htmlFunction = JST['handlebars/videography.hbs'];
       html = htmlFunction(dataBranded);
       break;
-    case "file:///Users/Jenn/Projects/old-pete-lee/narrative/index.html":
+    case "http://ohpetelee.com/narrative/":
       htmlFunction = JST['handlebars/videography.hbs'];
       html = htmlFunction(dataNarrative);
       break;
-    case "file:///Users/Jenn/Projects/old-pete-lee/photography/professional/index.html":
+    case "http://ohpetelee.com/photography/professional/":
       htmlFunction = JST['handlebars/photography.hbs'];
       html = htmlFunction(dataProfessional);
       break;
-    case "file:///Users/Jenn/Projects/old-pete-lee/photography/personal/index.html":
+    case "http://ohpetelee.com/photography/personal/":
       htmlFunction = JST['handlebars/photography.hbs'];
       html = htmlFunction(dataPersonal);
       break;
