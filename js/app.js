@@ -204,24 +204,24 @@ $(document).ready(function(){
 });
 
 // Add shadow only after asset load
-$(window).load(function() {
-  $('.video__outer').css('box-shadow', '0 0 5px 0 #222');
+// $(window).load(function() {
+//   $('.video__outer').css('box-shadow', '0 0 0 5px black');
 
-  if (location.href !== 'http://ohpetelee.com/') {
-    var docHeight = $(document).height();
-    $('body').append('<div class="overlay"></div>');
-    $('.overlay')
-      .height(docHeight)
-      .css({
-         'opacity' : 0.75,
-         'position': 'absolute',
-         'top': 0,
-         'left': 0,
-         'background-color': 'white',
-         'width': '100%',
-      });
-  }
-});
+  // if (location.href !== 'http://ohpetelee.com/') {
+  //   var docHeight = $(document).height();
+  //   $('body').append('<div class="overlay"></div>');
+  //   $('.overlay')
+  //     .height(docHeight)
+  //     .css({
+  //        'opacity' : 0.5,
+  //        'position': 'absolute',
+  //        'top': 0,
+  //        'left': 0,
+  //        'background-color': 'white',
+  //        'width': '100%',
+  //     });
+  // }
+// });
 
 
 

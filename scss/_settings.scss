@@ -124,8 +124,8 @@ $primary-color: #f2002b;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-// $body-bg: $white;
-// $body-font-color: $jet;
+$body-bg: black;
+$body-font-color: white;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -213,7 +213,7 @@ $primary-color: #f2002b;
 // $header-font-family: $body-font-family;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: $jet;
+$header-font-color: white;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -1130,7 +1130,7 @@ $primary-color: #f2002b;
 // $reveal-overlay-bg-old: $black;
 
 // We use these to control the style of the modal itself.
-// $reveal-modal-bg: $white;
+   $reveal-modal-bg: black;
 // $reveal-position-top: rem-calc(100);
 // $reveal-default-width: 80%;
 // $reveal-max-width: $row-width;
@@ -1141,7 +1141,7 @@ $primary-color: #f2002b;
    $reveal-close-font-size: rem-calc(24);
    $reveal-close-top: rem-calc(-8);
    $reveal-close-side: rem-calc(-8);
-   $reveal-close-color: #333;
+   $reveal-close-color: white;
 // $reveal-close-weight: $font-weight-bold;
 
 // We use this to set the default radius used throughout the core.
@@ -1409,7 +1409,7 @@ $primary-color: #f2002b;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-// $topbar-title-font-size: rem-calc(17);
+$topbar-title-font-size: rem-calc(18);
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: $white;

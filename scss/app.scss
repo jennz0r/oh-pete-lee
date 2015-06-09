@@ -53,6 +53,11 @@ body {
   font-weight: 600;
 }
 
+.bio {
+  padding: 1em;
+  background-color: rgba(22,22,22,0.5);
+}
+
 .overlay {
   z-index: -1;
 }
@@ -73,6 +78,7 @@ body {
 
 .video__outer {
   position: relative;
+  box-shadow: 0 0 0 5px #111;
 }
 
 .video__overlay {
@@ -102,4 +108,12 @@ body {
       opacity: 1;
     }
   }
+}
+
+.reveal-modal {
+  border: 0;
+}
+
+.close-reveal-modal {
+  background-color: black !important;
 }
