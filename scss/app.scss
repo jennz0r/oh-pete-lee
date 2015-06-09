@@ -49,13 +49,26 @@ body {
   z-index: -2;
 }
 
+.title {
+  font-weight: 600;
+}
+
 .overlay {
   z-index: -1;
 }
 
-.mv4x {
+.mv {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.mv2x {
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+.ph {
+  padding: 0 0.75em;
 }
 
 .video__outer {

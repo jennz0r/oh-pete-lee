@@ -47,10 +47,14 @@ this["JST"]["handlebars/videography.hbs"] = Handlebars.template({"1":function(de
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
     + "?badge='0'&byline='0'&color='f2002b'&portrait='0'&title='0'\" frameborder=\"0\" width=\"500\" height=\"281\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n        <a class=\"close-reveal-modal\" aria-label=\"Close\">&#9447;</a>\n      </div><!--\n    -->";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1;
+    var stack1, helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
   return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "")
-    + "\n<div class=\"row\">\n  <div class=\"columns\">\n    <ul class=\"small-block-grid-1  medium-block-grid-2  large-block-grid-3  mv4x\">\n      "
+    + "\n<div class=\"row  mv  ph\">\n  <h1 class=\"title\">"
+    + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
+    + "</h1>\n  <p>"
+    + alias3(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"description","hash":{},"data":data}) : helper)))
+    + "</p>\n</div>\n<div class=\"row\">\n  <div class=\"columns\">\n    <ul class=\"small-block-grid-1  medium-block-grid-2  large-block-grid-3\">\n      "
     + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.videos : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + "\n    </ul>\n  </div>\n</div>";
 },"usePartial":true,"useData":true});
