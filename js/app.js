@@ -157,60 +157,60 @@ var htmlFunction, html;
 
 $(document).ready(function(){
   // Change cases to live URL before launch
-  switch(location.href) {
-    case "file:///Users/Jenn/Projects/old-pete-lee/index.html":
-      htmlFunction = JST['handlebars/index.hbs'];
-      html = htmlFunction(dataIndex);
-      break;
-    case "file:///Users/Jenn/Projects/old-pete-lee/music/index.html":
-      htmlFunction = JST['handlebars/videography.hbs'];
-      html = htmlFunction(dataMusic);
-      break;
-    case "file:///Users/Jenn/Projects/old-pete-lee/branded/index.html":
-      htmlFunction = JST['handlebars/videography.hbs'];
-      html = htmlFunction(dataBranded);
-      break;
-    case "file:///Users/Jenn/Projects/old-pete-lee/narrative/index.html":
-      htmlFunction = JST['handlebars/videography.hbs'];
-      html = htmlFunction(dataNarrative);
-      break;
-    case "file:///Users/Jenn/Projects/old-pete-lee/photography/professional/index.html":
-      htmlFunction = JST['handlebars/photography-professional.hbs'];
-      html = htmlFunction(dataProfessional);
-      break;
-    case "file:///Users/Jenn/Projects/old-pete-lee/photography/personal/index.html":
-      htmlFunction = JST['handlebars/photography-personal.hbs'];
-      html = htmlFunction(dataPersonal);
-      break;
-  }
-
-  // Cases below are live URLs
   // switch(location.href) {
-  //   case "http://ohpetelee.com/":
+  //   case "file:///Users/Jenn/Projects/old-pete-lee/index.html":
   //     htmlFunction = JST['handlebars/index.hbs'];
   //     html = htmlFunction(dataIndex);
   //     break;
-  //   case "http://ohpetelee.com/music/":
+  //   case "file:///Users/Jenn/Projects/old-pete-lee/music/index.html":
   //     htmlFunction = JST['handlebars/videography.hbs'];
   //     html = htmlFunction(dataMusic);
   //     break;
-  //   case "http://ohpetelee.com/branded/":
+  //   case "file:///Users/Jenn/Projects/old-pete-lee/branded/index.html":
   //     htmlFunction = JST['handlebars/videography.hbs'];
   //     html = htmlFunction(dataBranded);
   //     break;
-  //   case "http://ohpetelee.com/narrative/":
+  //   case "file:///Users/Jenn/Projects/old-pete-lee/narrative/index.html":
   //     htmlFunction = JST['handlebars/videography.hbs'];
   //     html = htmlFunction(dataNarrative);
   //     break;
-  //   case "http://ohpetelee.com/photography/professional/":
+  //   case "file:///Users/Jenn/Projects/old-pete-lee/photography/professional/index.html":
   //     htmlFunction = JST['handlebars/photography-professional.hbs'];
   //     html = htmlFunction(dataProfessional);
   //     break;
-  //   case "http://ohpetelee.com/photography/personal/":
+  //   case "file:///Users/Jenn/Projects/old-pete-lee/photography/personal/index.html":
   //     htmlFunction = JST['handlebars/photography-personal.hbs'];
   //     html = htmlFunction(dataPersonal);
   //     break;
   // }
+
+//  Cases below are live URLs
+  switch(location.href) {
+    case "http://ohpetelee.com/":
+      htmlFunction = JST['handlebars/index.hbs'];
+      html = htmlFunction(dataIndex);
+      break;
+    case "http://ohpetelee.com/music/":
+      htmlFunction = JST['handlebars/videography.hbs'];
+      html = htmlFunction(dataMusic);
+      break;
+    case "http://ohpetelee.com/branded/":
+      htmlFunction = JST['handlebars/videography.hbs'];
+      html = htmlFunction(dataBranded);
+      break;
+    case "http://ohpetelee.com/narrative/":
+      htmlFunction = JST['handlebars/videography.hbs'];
+      html = htmlFunction(dataNarrative);
+      break;
+    case "http://ohpetelee.com/photography/professional/":
+      htmlFunction = JST['handlebars/photography-professional.hbs'];
+      html = htmlFunction(dataProfessional);
+      break;
+    case "http://ohpetelee.com/photography/personal/":
+      htmlFunction = JST['handlebars/photography-personal.hbs'];
+      html = htmlFunction(dataPersonal);
+      break;
+  }
 
   // Prepend the template to the body
   $('body').prepend(html);
@@ -223,14 +223,14 @@ $(document).ready(function(){
     '/img/pete02.jpg'
   ];
 
-  var randomImgURL = hMath.floor(Math.random() * 39);
+  var randomImgURL = Math.floor(Math.random() * 39) + 1;
 
-  var randomIndexImgURL = Math.floor(Math.random() * 2);
+  var randomIndexImgURL = Math.floor(Math.random() * 2) + 1;
 
   if (location.href !== 'http://ohpetelee.com/photography/professional/' &&
       location.href !== 'http://ohpetelee.com/photography/personal/' &&
-      location.href !== 'http://ohpetelee.com' ) {
-    $('body').css('background-image', 'url(/img/background/' + randomImgURL + '.jpg)');
+      location.href !== 'http://ohpetelee.com/' ) {
+    $('body').css('background-image', 'url(/img/backgrounds/' + randomImgURL + '.jpg)');
   }
   else if (location.href == 'http://ohpetelee.com/') {
     $('body').css('background-image', 'url(/img/pete0' + randomIndexImgURL + '.jpg)');

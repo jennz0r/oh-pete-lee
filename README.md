@@ -27,3 +27,6 @@ And you're set!
 
   * `scss/_settings.scss`: Foundation configuration settings go in here
   * `scss/app.scss`: Application styles go here
+
+
+In app.js, don't forget to change URLs to the live URLs for handlebars templates.
