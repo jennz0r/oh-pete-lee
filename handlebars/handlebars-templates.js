@@ -27,7 +27,8 @@ this["JST"]["handlebars/index.hbs"] = Handlebars.template({"compiler":[6,">= 2.0
 this["JST"]["handlebars/photography.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "");
+  return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "")
+    + "\n<div class=\"row\">\n  <div class=\"small-12  columns\">\n    <div style='position: relative; padding-bottom: 76%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=75&size=big&setId=72157635418017496&credit=1&thumbnails=0&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;'></iframe></div>\n  </div>\n</div>";
 },"usePartial":true,"useData":true});
 
 this["JST"]["handlebars/videography.hbs"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {

@@ -198,14 +198,21 @@ $(document).ready(function(){
 
   var randomImgURL;
   randomImgURL = homePhotoURLs[Math.floor(Math.random() * homePhotoURLs.length)];
-  $('body').css('background-image', 'url(' + randomImgURL + ')');
+
+  if (location.href !== 'http://ohpetelee.com/photography/professional/' &&
+      location.href !== 'http://ohpetelee.com/photography/personal/' ) {
+    $('body').css('background-image', 'url(' + randomImgURL + ')');
+  }
+  else {
+    $('body').css('background-color', 'black');
+  }
 
   $(document).foundation();
 });
 
 // Add shadow only after asset load
-// $(window).load(function() {
-//   $('.video__outer').css('box-shadow', '0 0 0 5px black');
+$(window).load(function() {
+  $('.video__outer').css('box-shadow', '0 0 0 5px black');
 
   // if (location.href !== 'http://ohpetelee.com/') {
   //   var docHeight = $(document).height();
@@ -221,7 +228,7 @@ $(document).ready(function(){
   //        'width': '100%',
   //     });
   // }
-// });
+});
 
 
 
