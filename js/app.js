@@ -158,31 +158,59 @@ var htmlFunction, html;
 $(document).ready(function(){
   // Change cases to live URL before launch
   switch(location.href) {
-    case "http://ohpetelee.com/":
+    case "file:///Users/Jenn/Projects/old-pete-lee/index.html":
       htmlFunction = JST['handlebars/index.hbs'];
       html = htmlFunction(dataIndex);
       break;
-    case "http://ohpetelee.com/music/":
+    case "file:///Users/Jenn/Projects/old-pete-lee/music/index.html":
       htmlFunction = JST['handlebars/videography.hbs'];
       html = htmlFunction(dataMusic);
       break;
-    case "http://ohpetelee.com/branded/":
+    case "file:///Users/Jenn/Projects/old-pete-lee/branded/index.html":
       htmlFunction = JST['handlebars/videography.hbs'];
       html = htmlFunction(dataBranded);
       break;
-    case "http://ohpetelee.com/narrative/":
+    case "file:///Users/Jenn/Projects/old-pete-lee/narrative/index.html":
       htmlFunction = JST['handlebars/videography.hbs'];
       html = htmlFunction(dataNarrative);
       break;
-    case "http://ohpetelee.com/photography/professional/":
-      htmlFunction = JST['handlebars/photography.hbs'];
+    case "file:///Users/Jenn/Projects/old-pete-lee/photography/professional/index.html":
+      htmlFunction = JST['handlebars/photography-professional.hbs'];
       html = htmlFunction(dataProfessional);
       break;
-    case "http://ohpetelee.com/photography/personal/":
-      htmlFunction = JST['handlebars/photography.hbs'];
+    case "file:///Users/Jenn/Projects/old-pete-lee/photography/personal/index.html":
+      htmlFunction = JST['handlebars/photography-personal.hbs'];
       html = htmlFunction(dataPersonal);
       break;
   }
+
+  // Cases below are live URLs
+  // switch(location.href) {
+  //   case "http://ohpetelee.com/":
+  //     htmlFunction = JST['handlebars/index.hbs'];
+  //     html = htmlFunction(dataIndex);
+  //     break;
+  //   case "http://ohpetelee.com/music/":
+  //     htmlFunction = JST['handlebars/videography.hbs'];
+  //     html = htmlFunction(dataMusic);
+  //     break;
+  //   case "http://ohpetelee.com/branded/":
+  //     htmlFunction = JST['handlebars/videography.hbs'];
+  //     html = htmlFunction(dataBranded);
+  //     break;
+  //   case "http://ohpetelee.com/narrative/":
+  //     htmlFunction = JST['handlebars/videography.hbs'];
+  //     html = htmlFunction(dataNarrative);
+  //     break;
+  //   case "http://ohpetelee.com/photography/professional/":
+  //     htmlFunction = JST['handlebars/photography-professional.hbs'];
+  //     html = htmlFunction(dataProfessional);
+  //     break;
+  //   case "http://ohpetelee.com/photography/personal/":
+  //     htmlFunction = JST['handlebars/photography-personal.hbs'];
+  //     html = htmlFunction(dataPersonal);
+  //     break;
+  // }
 
   // Prepend the template to the body
   $('body').prepend(html);
@@ -190,18 +218,22 @@ $(document).ready(function(){
   // Use fit vids to make videos responsive
   $(".modal__video").fitVids();
 
-  var homePhotoURLs = [
-    'https://farm8.staticflickr.com/7246/8155561235_ac9e5b2cde_o.jpg',
-    'https://farm8.staticflickr.com/7153/6675594551_11a1ce9c28_o.jpg',
-    'https://farm8.staticflickr.com/7350/12799015685_6aa3122f86_o.jpg',
+  var indexPhotoURLs = [
+    '/img/pete01.jpg',
+    '/img/pete02.jpg'
   ];
 
-  var randomImgURL;
-  randomImgURL = homePhotoURLs[Math.floor(Math.random() * homePhotoURLs.length)];
+  var randomImgURL = hMath.floor(Math.random() * 39);
+
+  var randomIndexImgURL = Math.floor(Math.random() * 2);
 
   if (location.href !== 'http://ohpetelee.com/photography/professional/' &&
-      location.href !== 'http://ohpetelee.com/photography/personal/' ) {
-    $('body').css('background-image', 'url(' + randomImgURL + ')');
+      location.href !== 'http://ohpetelee.com/photography/personal/' &&
+      location.href !== 'http://ohpetelee.com' ) {
+    $('body').css('background-image', 'url(/img/background/' + randomImgURL + '.jpg)');
+  }
+  else if (location.href == 'http://ohpetelee.com/') {
+    $('body').css('background-image', 'url(/img/pete0' + randomIndexImgURL + '.jpg)');
   }
   else {
     $('body').css('background-color', 'black');
