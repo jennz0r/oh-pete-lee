@@ -15,7 +15,7 @@ var dataMusic = {
   professional_url: '../photography/professional',
   personal_url: '../photography/personal',
   title: 'MUSIC',
-  description: "Muffin chocolate bar lollipop candy topping pudding tart candy canes lemon drops. Topping gingerbread croissant tiramisu pastry cupcake bonbon jelly-o.",
+  description: "",
   videos: [{
     id: '120522773',
     title: 'Meklit Hadero feat. Samuel Yirga - Kemekem',
@@ -71,7 +71,7 @@ var dataBranded = {
   professional_url: '../photography/professional',
   personal_url: '../photography/personal',
   title: 'BRANDED',
-  description: "Muffin chocolate bar lollipop candy topping pudding tart candy canes lemon drops. Topping gingerbread croissant tiramisu pastry cupcake bonbon jelly-o.",
+  description: "",
   videos: [{
     id: '125626176',
     title: '100 OpenTables: Brand Video',
@@ -111,7 +111,7 @@ var dataNarrative = {
   professional_url: '../photography/professional',
   personal_url: '../photography/personal',
   title: 'NARRATIVE',
-  description: "Muffin chocolate bar lollipop candy topping pudding tart candy canes lemon drops. Topping gingerbread croissant tiramisu pastry cupcake bonbon jelly-o.",
+  description: "",
   videos: [{
     id: '79282772',
     title: 'Rope a Dope',
@@ -139,7 +139,7 @@ var dataProfessional = {
   professional_url: '',
   personal_url: '../personal',
   title: 'PROFESSIONAL PHOTOGRAPHY',
-  description: "Muffin chocolate bar lollipop candy topping pudding tart candy canes lemon drops. Topping gingerbread croissant tiramisu pastry cupcake bonbon jelly-o."
+  description: ""
 };
 
 var dataPersonal = {
@@ -150,7 +150,7 @@ var dataPersonal = {
   professional_url: '../professional',
   personal_url: '',
   title: 'PERSONAL PHOTOGRAPHY',
-  description: "Muffin chocolate bar lollipop candy topping pudding tart candy canes lemon drops. Topping gingerbread croissant tiramisu pastry cupcake bonbon jelly-o."
+  description: ""
 };
 
 var htmlFunction, html;
