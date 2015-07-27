@@ -155,62 +155,34 @@ var dataPersonal = {
 
 var htmlFunction, html;
 
-$(document).ready(function(){
+$(document).ready(function() {
   // Change cases to live URL before launch
-  // switch(location.href) {
-  //   case "file:///Users/Jenn/Projects/old-pete-lee/index.html":
-  //     htmlFunction = JST['handlebars/index.hbs'];
-  //     html = htmlFunction(dataIndex);
-  //     break;
-  //   case "file:///Users/Jenn/Projects/old-pete-lee/music/index.html":
-  //     htmlFunction = JST['handlebars/videography.hbs'];
-  //     html = htmlFunction(dataMusic);
-  //     break;
-  //   case "file:///Users/Jenn/Projects/old-pete-lee/branded/index.html":
-  //     htmlFunction = JST['handlebars/videography.hbs'];
-  //     html = htmlFunction(dataBranded);
-  //     break;
-  //   case "file:///Users/Jenn/Projects/old-pete-lee/narrative/index.html":
-  //     htmlFunction = JST['handlebars/videography.hbs'];
-  //     html = htmlFunction(dataNarrative);
-  //     break;
-  //   case "file:///Users/Jenn/Projects/old-pete-lee/photography/professional/index.html":
-  //     htmlFunction = JST['handlebars/photography-professional.hbs'];
-  //     html = htmlFunction(dataProfessional);
-  //     break;
-  //   case "file:///Users/Jenn/Projects/old-pete-lee/photography/personal/index.html":
-  //     htmlFunction = JST['handlebars/photography-personal.hbs'];
-  //     html = htmlFunction(dataPersonal);
-  //     break;
-  // }
-
-//  Cases below are live URLs
-  switch(location.href) {
-    case "http://ohpetelee.com/":
+  switch(location.pathname) {
+    case "/":
       htmlFunction = JST['handlebars/index.hbs'];
       html = htmlFunction(dataIndex);
       break;
-    case "http://ohpetelee.com/music/":
+    case "/music/":
       htmlFunction = JST['handlebars/videography.hbs'];
       html = htmlFunction(dataMusic);
       break;
-    case "http://ohpetelee.com/branded/":
+    case "/branded/":
       htmlFunction = JST['handlebars/videography.hbs'];
       html = htmlFunction(dataBranded);
       break;
-    case "http://ohpetelee.com/narrative/":
+    case "/narrative/":
       htmlFunction = JST['handlebars/videography.hbs'];
       html = htmlFunction(dataNarrative);
       break;
-    case "http://ohpetelee.com/photography/professional/":
+    case "/photography/professional/":
       htmlFunction = JST['handlebars/photography-professional.hbs'];
       html = htmlFunction(dataProfessional);
       break;
-    case "http://ohpetelee.com/photography/personal/":
+    case "/photography/personal/":
       htmlFunction = JST['handlebars/photography-personal.hbs'];
       html = htmlFunction(dataPersonal);
       break;
-  }
+  };
 
   // Prepend the template to the body
   $('body').prepend(html);
@@ -218,22 +190,17 @@ $(document).ready(function(){
   // Use fit vids to make videos responsive
   $(".modal__video").fitVids();
 
-  var indexPhotoURLs = [
-    '/img/pete01.jpg',
-    '/img/pete02.jpg'
-  ];
-
   var randomImgURL = Math.floor(Math.random() * 39) + 1;
 
   var randomIndexImgURL = Math.floor(Math.random() * 2) + 1;
 
-  if (location.href !== 'http://ohpetelee.com/photography/professional/' &&
-      location.href !== 'http://ohpetelee.com/photography/personal/' &&
-      location.href !== 'http://ohpetelee.com/' ) {
+  if (location.pathname !== '/photography/professional/' &&
+      location.pathname !== '/photography/personal/' &&
+      location.pathname !== '/' ) {
     $('body').css('background-image', 'url(/img/backgrounds/' + randomImgURL + '.jpg)');
   }
-  else if (location.href == 'http://ohpetelee.com/') {
-    $('body').css('background-image', 'url(/img/pete0' + randomIndexImgURL + '.jpg)');
+  else if (location.pathname == '/') {
+    $('body').css('background-image', 'url(/img/pete01.jpg)');
   }
   else {
     $('body').css('background-color', 'black');
@@ -246,7 +213,7 @@ $(document).ready(function(){
 $(window).load(function() {
   $('.video__outer').css('box-shadow', '0 0 0 5px black');
 
-  // if (location.href !== 'http://ohpetelee.com/') {
+  // if (location.pathname !== '/') {
   //   var docHeight = $(document).height();
   //   $('body').append('<div class="overlay"></div>');
   //   $('.overlay')
