@@ -15,8 +15,19 @@ Handlebars.registerPartial("nav", Handlebars.template({"compiler":[6,">= 2.0.0-b
     + alias3(((helper = (helper = helpers.professional_url || (depth0 != null ? depth0.professional_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"professional_url","hash":{},"data":data}) : helper)))
     + "\">Professional</a></li>\n          <li><a href=\""
     + alias3(((helper = (helper = helpers.personal_url || (depth0 != null ? depth0.personal_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"personal_url","hash":{},"data":data}) : helper)))
-    + "\">Personal</a></li>\n        </ul>\n      </li>\n    </ul>\n  </section>\n</nav>";
+    + "\">Personal</a></li>\n        </ul>\n      </li>\n      <li><a href=\""
+    + alias3(((helper = (helper = helpers.contact_url || (depth0 != null ? depth0.contact_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"contact_url","hash":{},"data":data}) : helper)))
+    + "\">Contact</a></li>\n    </ul>\n  </section>\n</nav>";
 },"useData":true}));
+
+this["JST"]["handlebars/contact.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+    var stack1, helper;
+
+  return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "")
+    + "\n<div class=\"row  mv  ph\">\n  <div class=\"small-12  medium-6  large-5  small-centered  medium-uncentered  columns\">\n    <h1 class=\"title\">"
+    + this.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
+    + "</h1>\n    <p class=\"bio  mv\">\n      <span><a href=\"http://enterthehero.com/\">Enter the Hero</a></span><br>\n      <span><a href=\"mailto:pete@ohpetelee.com\">pete@ohpetelee.com</a></span><br>\n      <span>617.784.1886</span>\n    </span><br>\n  </div>\n</div>";
+},"usePartial":true,"useData":true});
 
 this["JST"]["handlebars/index.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var stack1;

@@ -4,7 +4,8 @@ var dataIndex = {
 	branded_url: 'branded',
 	narrative_url: 'narrative',
 	professional_url: 'photography/professional',
-	personal_url: 'photography/personal'
+	personal_url: 'photography/personal',
+  contact_url: 'contact'
 };
 
 var dataMusic = {
@@ -14,6 +15,7 @@ var dataMusic = {
   narrative_url: '../narrative',
   professional_url: '../photography/professional',
   personal_url: '../photography/personal',
+  contact_url: '../contact',
   title: 'MUSIC',
   description: "",
   videos: [{
@@ -70,6 +72,7 @@ var dataBranded = {
   narrative_url: '../narrative',
   professional_url: '../photography/professional',
   personal_url: '../photography/personal',
+  contact_url: '../contact',
   title: 'BRANDED',
   description: "",
   videos: [{
@@ -110,6 +113,7 @@ var dataNarrative = {
   narrative_url: '',
   professional_url: '../photography/professional',
   personal_url: '../photography/personal',
+  contact_url: '../contact',
   title: 'NARRATIVE',
   description: "",
   videos: [{
@@ -138,6 +142,7 @@ var dataProfessional = {
   narrative_url: '../../narrative',
   professional_url: '',
   personal_url: '../personal',
+  contact_url: '../../contact',
   title: 'PROFESSIONAL PHOTOGRAPHY',
   description: ""
 };
@@ -148,8 +153,21 @@ var dataPersonal = {
   branded_url: '../../branded',
   narrative_url: '../../narrative',
   professional_url: '../professional',
+  contact_url: '../../contact',
   personal_url: '',
   title: 'PERSONAL PHOTOGRAPHY',
+  description: ""
+};
+
+var dataContact = {
+  home_url: '../../',
+  music_url: '../../music',
+  branded_url: '../../branded',
+  narrative_url: '../../narrative',
+  professional_url: '../photography/professional',
+  personal_url: '../photography/professional',
+  contact_url: '',
+  title: 'CONTACT',
   description: ""
 };
 
@@ -182,6 +200,10 @@ $(document).ready(function() {
       htmlFunction = JST['handlebars/photography-personal.hbs'];
       html = htmlFunction(dataPersonal);
       break;
+    case "/contact/":
+      htmlFunction = JST['handlebars/contact.hbs'];
+      html = htmlFunction(dataContact);
+      break;
   };
 
   // Prepend the template to the body
@@ -202,6 +224,9 @@ $(document).ready(function() {
   // else
 
   if (location.pathname == '/') {
+    $('body').css('background-image', 'url(/img/pete01.jpg)');
+  }
+  else if (location.pathname == '/contact/') {
     $('body').css('background-image', 'url(/img/pete01.jpg)');
   }
   else {
