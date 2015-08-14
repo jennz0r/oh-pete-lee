@@ -194,40 +194,42 @@ $(document).ready(function() {
 
   var randomIndexImgURL = Math.floor(Math.random() * 2) + 1;
 
-  if (location.pathname !== '/photography/professional/' &&
-      location.pathname !== '/photography/personal/' &&
-      location.pathname !== '/' ) {
-    $('body').css('background-image', 'url(/img/backgrounds/' + randomImgURL + '.jpg)');
-  }
-  else if (location.pathname == '/') {
+  // if (location.pathname !== '/photography/professional/' &&
+  //     location.pathname !== '/photography/personal/' &&
+  //     location.pathname !== '/' ) {
+  //   $('body').css('background-image', 'url(/img/backgrounds/' + randomImgURL + '.jpg)');
+  // }
+  // else
+
+  if (location.pathname == '/') {
     $('body').css('background-image', 'url(/img/pete01.jpg)');
   }
   else {
-    $('body').css('background-color', 'black');
+    $('body').css('background-color', '#222');
   }
 
   $(document).foundation();
 });
 
 // Add shadow only after asset load
-$(window).load(function() {
-  $('.video__outer').css('box-shadow', '0 0 0 5px black');
+// $(window).load(function() {
+//   $('.video__outer').css('box-shadow', '0 0 0 5px black');
 
-  // if (location.pathname !== '/') {
-  //   var docHeight = $(document).height();
-  //   $('body').append('<div class="overlay"></div>');
-  //   $('.overlay')
-  //     .height(docHeight)
-  //     .css({
-  //        'opacity' : 0.5,
-  //        'position': 'absolute',
-  //        'top': 0,
-  //        'left': 0,
-  //        'background-color': 'white',
-  //        'width': '100%',
-  //     });
-  // }
-});
+//   if (location.pathname !== '/') {
+//     var docHeight = $(document).height();
+//     $('body').append('<div class="overlay"></div>');
+//     $('.overlay')
+//       .height(docHeight)
+//       .css({
+//          'opacity' : 0.5,
+//          'position': 'absolute',
+//          'top': 0,
+//          'left': 0,
+//          'background-color': 'white',
+//          'width': '100%',
+//       });
+//   }
+// });
 
 
 
