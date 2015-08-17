@@ -190,9 +190,8 @@ $(document).ready(function() {
   // Use fit vids to make videos responsive
   $(".modal__video").fitVids();
 
-  var randomImgURL = Math.floor(Math.random() * 39) + 1;
-  var randomIndexImgURL = Math.floor(Math.random() * 2) + 1;
-
+  
+  // var randomIndexImgURL = Math.floor(Math.random() * 2) + 1;
   // if (location.pathname !== '/photography/professional/' &&
   //     location.pathname !== '/photography/personal/' &&
   //     location.pathname !== '/' ) {
@@ -200,11 +199,19 @@ $(document).ready(function() {
   // }
   // else
 
+  var nextBackground = function() {
+    var randomImgURL = Math.floor(Math.random() * 39) + 1;
+    $('body').css({
+      'background-image': 'url(/../img/backgrounds/' + randomImgURL + '.jpg)'
+    });
+    setTimeout(nextBackground, 10000);
+  }
+
   if (location.pathname == '/') {
     $('body').css('background-image', 'url(/img/pete01.jpg)');
   }
   else if (location.pathname == '/contact/') {
-    $('body').css('background-image', 'url(/img/pete01.jpg)');
+    nextBackground();
   }
   else {
     $('body').css('background-color', '#222');
