@@ -11,11 +11,9 @@ Handlebars.registerPartial("nav", Handlebars.template({"compiler":[6,">= 2.0.0-b
     + alias3(((helper = (helper = helpers.branded_url || (depth0 != null ? depth0.branded_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"branded_url","hash":{},"data":data}) : helper)))
     + "\">Branded</a></li>\n      <li><a href=\""
     + alias3(((helper = (helper = helpers.narrative_url || (depth0 != null ? depth0.narrative_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"narrative_url","hash":{},"data":data}) : helper)))
-    + "\">Narrative</a></li>\n      <li class=\"has-dropdown\">\n        <a>Photography</a>\n        <ul class=\"dropdown\">\n          <li><a href=\""
-    + alias3(((helper = (helper = helpers.professional_url || (depth0 != null ? depth0.professional_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"professional_url","hash":{},"data":data}) : helper)))
-    + "\">Professional</a></li>\n          <li><a href=\""
-    + alias3(((helper = (helper = helpers.personal_url || (depth0 != null ? depth0.personal_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"personal_url","hash":{},"data":data}) : helper)))
-    + "\">Personal</a></li>\n        </ul>\n      </li>\n      <li><a href=\""
+    + "\">Narrative</a></li>\n      <li><a href=\""
+    + alias3(((helper = (helper = helpers.photography_url || (depth0 != null ? depth0.photography_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"photography_url","hash":{},"data":data}) : helper)))
+    + "\">Photography</a></li>\n      <li><a href=\""
     + alias3(((helper = (helper = helpers.contact_url || (depth0 != null ? depth0.contact_url : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"contact_url","hash":{},"data":data}) : helper)))
     + "\">Contact</a></li>\n    </ul>\n  </section>\n</nav>";
 },"useData":true}));
@@ -47,6 +45,13 @@ this["JST"]["handlebars/photography-professional.hbs"] = Handlebars.template({"c
 
   return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "")
     + "\n<div class=\"row\">\n  <div class=\"small-12  columns\">\n    <div style='position: relative; padding-bottom: 76%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=75&size=big&setId=72157654936151111&credit=&thumbnails=0&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;'></iframe></div>\n  </div>\n</div>";
+},"usePartial":true,"useData":true});
+
+this["JST"]["handlebars/photography.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "")
+    + "\n<div class=\"row\">\n  <div class=\"small-12  columns\">\n    <div style='position: relative; padding-bottom: 76%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=75&size=big&setId=72157632464340437&credit=&thumbnails=0&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;'></iframe></div>\n  </div>\n</div>";
 },"usePartial":true,"useData":true});
 
 this["JST"]["handlebars/videography.hbs"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {

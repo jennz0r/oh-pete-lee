@@ -3,8 +3,7 @@ var dataIndex = {
 	music_url: 'music',
 	branded_url: 'branded',
 	narrative_url: 'narrative',
-	professional_url: 'photography/professional',
-	personal_url: 'photography/personal',
+  photography_url: 'photography',
   contact_url: 'contact'
 };
 
@@ -13,8 +12,7 @@ var dataMusic = {
   music_url: '',
   branded_url: '../branded',
   narrative_url: '../narrative',
-  professional_url: '../photography/professional',
-  personal_url: '../photography/personal',
+  photography_url: '../photography',
   contact_url: '../contact',
   title: 'MUSIC',
   description: "",
@@ -70,8 +68,7 @@ var dataBranded = {
   music_url: '../music',
   branded_url: '',
   narrative_url: '../narrative',
-  professional_url: '../photography/professional',
-  personal_url: '../photography/personal',
+  photography_url: '../photography',
   contact_url: '../contact',
   title: 'BRANDED',
   description: "",
@@ -111,8 +108,7 @@ var dataNarrative = {
   music_url: '../music',
   branded_url: '../branded',
   narrative_url: '',
-  professional_url: '../photography/professional',
-  personal_url: '../photography/personal',
+  photography_url: '../photography',
   contact_url: '../contact',
   title: 'NARRATIVE',
   description: "",
@@ -135,27 +131,14 @@ var dataNarrative = {
   }]
 };
 
-var dataProfessional = {
+var dataPhotography = {
   home_url: '../../',
   music_url: '../../music',
   branded_url: '../../branded',
   narrative_url: '../../narrative',
-  professional_url: '',
-  personal_url: '../personal',
+  photography_url: '',
   contact_url: '../../contact',
-  title: 'PROFESSIONAL PHOTOGRAPHY',
-  description: ""
-};
-
-var dataPersonal = {
-  home_url: '../../',
-  music_url: '../../music',
-  branded_url: '../../branded',
-  narrative_url: '../../narrative',
-  professional_url: '../professional',
-  contact_url: '../../contact',
-  personal_url: '',
-  title: 'PERSONAL PHOTOGRAPHY',
+  title: 'PHOTOGRAPHY',
   description: ""
 };
 
@@ -164,8 +147,7 @@ var dataContact = {
   music_url: '../../music',
   branded_url: '../../branded',
   narrative_url: '../../narrative',
-  professional_url: '../photography/professional',
-  personal_url: '../photography/professional',
+  photography_url: '../photography',
   contact_url: '',
   title: 'CONTACT',
   description: ""
@@ -192,13 +174,9 @@ $(document).ready(function() {
       htmlFunction = JST['handlebars/videography.hbs'];
       html = htmlFunction(dataNarrative);
       break;
-    case "/photography/professional/":
-      htmlFunction = JST['handlebars/photography-professional.hbs'];
-      html = htmlFunction(dataProfessional);
-      break;
-    case "/photography/personal/":
-      htmlFunction = JST['handlebars/photography-personal.hbs'];
-      html = htmlFunction(dataPersonal);
+    case "/photography/":
+      htmlFunction = JST['handlebars/photography.hbs'];
+      html = htmlFunction(dataPhotography);
       break;
     case "/contact/":
       htmlFunction = JST['handlebars/contact.hbs'];
