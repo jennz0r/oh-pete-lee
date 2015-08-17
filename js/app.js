@@ -213,7 +213,6 @@ $(document).ready(function() {
   $(".modal__video").fitVids();
 
   var randomImgURL = Math.floor(Math.random() * 39) + 1;
-
   var randomIndexImgURL = Math.floor(Math.random() * 2) + 1;
 
   // if (location.pathname !== '/photography/professional/' &&

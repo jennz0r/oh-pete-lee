@@ -86,8 +86,13 @@ $include-html-global-classes: $include-html-classes;
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
+@font-face {
+    font-family: rock;
+    src: url('../rockwell.ttf');
+}
+
 // We use these to define default font stacks
-$font-family-sans-serif: Futura, 'Trebuchet MS', Arial, sans-serif;
+$font-family-sans-serif: rock, Futura, 'Trebuchet MS', Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
@@ -116,7 +121,7 @@ $font-family-sans-serif: Futura, 'Trebuchet MS', Arial, sans-serif;
 // $black       : #000000;
 
 // We use these as default colors throughout
-$primary-color: #f2002b;
+$primary-color: #FFFFFF;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -225,7 +230,7 @@ $header-font-color: white;
 // $h3-font-size: rem-calc(27);
 // $h4-font-size: rem-calc(23);
 // $h5-font-size: rem-calc(18);
-// $h6-font-size: 1rem;
+$h6-font-size: 1.2rem;
 
 // We use these to control header size reduction on small screens
 // $h1-font-reduction: rem-calc(10);
@@ -249,7 +254,7 @@ $header-font-color: white;
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
-// $paragraph-font-size: 1rem;
+// $paragraph-font-size: 1.2rem;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);

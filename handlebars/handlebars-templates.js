@@ -26,7 +26,7 @@ this["JST"]["handlebars/contact.hbs"] = Handlebars.template({"compiler":[6,">= 2
   return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "")
     + "\n<div class=\"row  mv  ph\">\n  <div class=\"small-12  medium-5  small-centered  medium-uncentered  columns\">\n    <h1 class=\"title\">"
     + this.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
-    + "</h1>\n    <p class=\"bio  mv\">\n      <span><a href=\"http://enterthehero.com/\">Enter the Hero</a></span><br>\n      <span><a href=\"mailto:pete@ohpetelee.com\">pete@ohpetelee.com</a></span><br>\n      <span>617.784.1886</span>\n    </span><br>\n  </div>\n</div>";
+    + "</h1>\n    <p class=\"bio  mv\">\n      <span><a href=\"http://enterthehero.com/\">Enter the Hero</a></span><br>\n      <span><a href=\"mailto:pete@ohpetelee.com\">pete@ohpetelee.com</a></span><br>\n      <span>617.784.1886</span>\n    </p>\n  </div>\n</div>";
 },"usePartial":true,"useData":true});
 
 this["JST"]["handlebars/index.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
@@ -56,11 +56,11 @@ this["JST"]["handlebars/videography.hbs"] = Handlebars.template({"1":function(de
     + alias3(((helper = (helper = helpers.thumbnailUrl || (depth0 != null ? depth0.thumbnailUrl : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"thumbnailUrl","hash":{},"data":data}) : helper)))
     + "\">\n          <div class=\"video__overlay\" data-reveal-id=\"videoModal"
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
-    + "\">\n            <p><a href=\"https://vimeo.com/"
+    + "\">\n            <h6><a href=\"https://vimeo.com/"
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
     + "\" target=\"_blank\">"
     + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
-    + "</a></p>\n          </div>\n        </div>\n      </li>\n      <div id=\"videoModal"
+    + "</a></h6>\n          </div>\n        </div>\n      </li>\n      <div id=\"videoModal"
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
     + "\" class=\"reveal-modal large\" data-reveal aria-labelledby=\"videoModalTitle\" aria-hidden=\"true\" role=\"dialog\">\n        <div class=\"modal__video\">\n          <iframe src=\"https://player.vimeo.com/video/"
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
@@ -71,9 +71,9 @@ this["JST"]["handlebars/videography.hbs"] = Handlebars.template({"1":function(de
   return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "")
     + "\n<div class=\"row  mv  ph\">\n  <h1 class=\"title\">"
     + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
-    + "</h1>\n  <p>"
+    + "</h1>\n  <!-- <p>"
     + alias3(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"description","hash":{},"data":data}) : helper)))
-    + "</p>\n</div>\n<div class=\"row\">\n  <div class=\"columns\">\n    <ul class=\"small-block-grid-1  medium-block-grid-2\">\n      "
+    + "</p> -->\n</div>\n<div class=\"row\">\n  <div class=\"columns\">\n    <ul class=\"small-block-grid-1  medium-block-grid-2\">\n      "
     + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.videos : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + "\n    </ul>\n  </div>\n</div>";
 },"usePartial":true,"useData":true});
