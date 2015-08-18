@@ -40,6 +40,15 @@
 //   "foundation/components/offcanvas",
      "foundation/components/visibility";
 
+body {
+  background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -2;
+}
+
 div.preloaded-images {
    position: absolute;
    overflow: hidden;

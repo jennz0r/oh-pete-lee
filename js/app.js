@@ -199,7 +199,7 @@ $(document).ready(function() {
   // }
   // else
 
-  if (location.pathname == '/') {
+  if (location.pathname == '/contact/') {
     $('body').css('background-image', 'url(/img/pete01.jpg)');
   }
   else if (location.pathname == '/photography/') {
