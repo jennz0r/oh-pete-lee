@@ -199,19 +199,11 @@ $(document).ready(function() {
   // }
   // else
 
-  var nextBackground = function() {
-    var randomImgURL = Math.floor(Math.random() * 39) + 1;
-    $('body').css({
-      'background-image': 'url(/../img/backgrounds/' + randomImgURL + '.jpg)'
-    });
-    setTimeout(nextBackground, 10000);
-  }
-
   if (location.pathname == '/') {
     $('body').css('background-image', 'url(/img/pete01.jpg)');
   }
-  else if (location.pathname == '/contact/') {
-    nextBackground();
+  else if (location.pathname == '/photography/') {
+    $('body').css('background-color', '#000');
   }
   else {
     $('body').css('background-color', '#222');
