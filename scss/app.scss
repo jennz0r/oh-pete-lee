@@ -106,6 +106,15 @@ div.preloaded-images {
     list-style-type: none;
 }
 
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+ 
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
+}
+
 .cb-slideshow li span { 
   width: 100%;
   height: 100%;
@@ -118,10 +127,7 @@ div.preloaded-images {
   background-repeat: none;
   opacity: 0;
   z-index: 0;
-  -webkit-animation: imageAnimation 200s linear infinite 0s;
-  -moz-animation: imageAnimation 200s linear infinite 0s;
-  -o-animation: imageAnimation 200s linear infinite 0s;
-  animation: imageAnimation 200s linear infinite 0s; 
+  @include prefix(animation, imageAnimation 200s linear infinite 0s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(1) span { 
@@ -130,126 +136,125 @@ div.preloaded-images {
 
 .cb-slideshow li:nth-child(2) span { 
   background-image: url(/img/backgrounds/2.jpg);
-  animation-delay: 5s;
+  @include prefix(animation-delay, 5s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(3) span { 
   background-image: url(/img/backgrounds/3.jpg);
-  animation-delay: 10s; 
+  @include prefix(animation-delay, 10s, webkit moz o); 
 }
 
 .cb-slideshow li:nth-child(4) span { 
   background-image: url(/img/backgrounds/4.jpg);
-  animation-delay: 15s; 
+  @include prefix(animation-delay, 15s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(5) span { 
   background-image: url(/img/backgrounds/5.jpg);
-  animation-delay: 20s; 
+  @include prefix(animation-delay, 20s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(6) span { 
   background-image: url(/img/backgrounds/6.jpg);
-  animation-delay: 25s; 
+  @include prefix(animation-delay, 25s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(7) span { 
   background-image: url(/img/backgrounds/7.jpg);
-  animation-delay: 30s; 
+  @include prefix(animation-delay, 30s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(8) span { 
   background-image: url(/img/backgrounds/8.jpg);
-  animation-delay: 35s; 
+  @include prefix(animation-delay, 35s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(9) span { 
   background-image: url(/img/backgrounds/9.jpg);
-  animation-delay: 40s; 
+  @include prefix(animation-delay, 40s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(10) span { 
   background-image: url(/img/backgrounds/10.jpg);
-  animation-delay: 45s; 
+  @include prefix(animation-delay, 45s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(11) span { 
   background-image: url(/img/backgrounds/11.jpg);
-  animation-delay: 50s; 
+  @include prefix(animation-delay, 50s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(12) span { 
   background-image: url(/img/backgrounds/12.jpg);
-  animation-delay: 55s;
-}
+  @include prefix(animation-delay, 55s, webkit moz o);}
 
 .cb-slideshow li:nth-child(13) span { 
   background-image: url(/img/backgrounds/13.jpg);
-  animation-delay: 60s; 
+  @include prefix(animation-delay, 60s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(14) span { 
   background-image: url(/img/backgrounds/14.jpg);
-  animation-delay: 65s; 
+  @include prefix(animation-delay, 65s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(15) span { 
   background-image: url(/img/backgrounds/15.jpg);
-  animation-delay: 70s; 
+  @include prefix(animation-delay, 70s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(16) span { 
   background-image: url(/img/backgrounds/16.jpg);
-  animation-delay: 75s; 
+  @include prefix(animation-delay, 75s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(17) span { 
   background-image: url(/img/backgrounds/17.jpg);
-  animation-delay: 80s; 
+  @include prefix(animation-delay, 80s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(18) span { 
   background-image: url(/img/backgrounds/18.jpg);
-  animation-delay: 85s; 
+  @include prefix(animation-delay, 85s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(19) span { 
   background-image: url(/img/backgrounds/19.jpg);
-  animation-delay: 90s; 
+  @include prefix(animation-delay, 90s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(20) span { 
   background-image: url(/img/backgrounds/20.jpg);
-  animation-delay: 95s; 
+  @include prefix(animation-delay, 95s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(21) span { 
   background-image: url(/img/backgrounds/21.jpg);
-  animation-delay: 100s; 
+  @include prefix(animation-delay, 100s, webkit moz o); 
 }
 .cb-slideshow li:nth-child(22) span { 
   background-image: url(/img/backgrounds/22.jpg);
-  animation-delay: 105s;
+  @include prefix(animation-delay, 105s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(23) span { 
   background-image: url(/img/backgrounds/23.jpg);
-  animation-delay: 110s; 
+  @include prefix(animation-delay, 110s, webkit moz o); 
 }
 
 .cb-slideshow li:nth-child(24) span { 
   background-image: url(/img/backgrounds/24.jpg);
-  animation-delay: 115s; 
+  @include prefix(animation-delay, 115s, webkit moz o); 
 }
 
 .cb-slideshow li:nth-child(25) span { 
   background-image: url(/img/backgrounds/25.jpg);
-  animation-delay: 120s; 
+  @include prefix(animation-delay, 120s, webkit moz o); 
 }
 
 .cb-slideshow li:nth-child(26) span { 
   background-image: url(/img/backgrounds/26.jpg);
-  animation-delay: 125s; 
+  @include prefix(animation-delay, 125s, webkit moz o); 
 }
 
 .header-custom {
