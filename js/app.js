@@ -19,7 +19,7 @@ var dataMusic = {
   videos: [{
     id: '120522773',
     title: 'Meklit Hadero feat. Samuel Yirga - Kemekem',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/515502687_640.jpg'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/531212273_640.jpg'
   }, {
     id: '91651414',
     title: 'Atmosphere - Kanye West (Official Music Video)',
@@ -43,7 +43,7 @@ var dataMusic = {
   }, {
     id: '49484881',
     title: 'Aesop Rock - ZZZ Top',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/341462416_640.jpg'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/531213127_640.jpg'
   }, {
     id: '79146873',
     title: 'Megan Keely - Just Enough Time',
@@ -75,7 +75,7 @@ var dataBranded = {
   videos: [{
     id: '125626176',
     title: '100 OpenTables: Brand Video',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/515793661_640.jpg'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/531211845_640.jpg'
   }, {
     id: '124724818',
     title: 'Sols - Live Your Life',
@@ -91,7 +91,7 @@ var dataBranded = {
   }, {
     id: '92575084',
     title: 'Craft - by Cost Plus World Market',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/472337519_640.jpg'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/531212665_640.jpg'
   }, {
     id: '128915836',
     title: 'Calphalon YOURSET Heirloom Tomato Sauce Recipe',
@@ -119,7 +119,7 @@ var dataNarrative = {
   }, {
     id: '116523821',
     title: 'Rope A Dope 2',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/503032964_640.jpg'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/503032632_640.jpg'
   }, {
     id: '91651414',
     title: 'Atmosphere - Kanye West (Official Music Video)',
@@ -127,7 +127,7 @@ var dataNarrative = {
   }, {
     id: '49484881',
     title: 'Aesop Rock - ZZZ Top',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/341462416_640.jpg'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/531213127_640.jpg'
   }]
 };
 
