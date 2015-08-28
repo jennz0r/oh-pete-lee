@@ -127,7 +127,7 @@ div.preloaded-images {
   background-repeat: none;
   opacity: 0;
   z-index: 0;
-  @include prefix(animation, imageAnimation 130s linear infinite 0s, webkit moz o);
+  @include prefix(animation, imageAnimation 135s linear infinite 0s, webkit moz o);
 }
 
 .cb-slideshow li:nth-child(1) span { 
