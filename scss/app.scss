@@ -257,6 +257,11 @@ div.preloaded-images {
   @include prefix(animation-delay, 125s, webkit moz o); 
 }
 
+.cb-slideshow li:nth-child(27) span { 
+  background-image: url(/img/pete01.jpg);
+  @include prefix(animation-delay, 130s, webkit moz o); 
+}
+
 .header-custom {
   text-decoration: underline;
 }
