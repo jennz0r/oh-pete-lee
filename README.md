@@ -28,5 +28,8 @@ And you're set!
   * `scss/_settings.scss`: Foundation configuration settings go in here
   * `scss/app.scss`: Application styles go here
 
+## Notes to Self
 
-In app.js, don't forget to change URLs to the live URLs for handlebars templates.
+Run a simple python server `python -m SimpleHTTPServer 8000` in the repo and you should be able to get everything up and running even though the URLS are live in app.js.
+
+Be sure to add handlebars-templates.js to the production version of the site!

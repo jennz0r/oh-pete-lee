@@ -56,7 +56,7 @@ this["JST"]["handlebars/photography.hbs"] = Handlebars.template({"compiler":[6,"
 },"usePartial":true,"useData":true});
 
 this["JST"]["handlebars/videography.hbs"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
-    var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
+    var stack1, helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
   return "<!--\n   --><li>\n        <div class=\"video__outer\">\n          <img src=\""
     + alias3(((helper = (helper = helpers.thumbnailUrl || (depth0 != null ? depth0.thumbnailUrl : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"thumbnailUrl","hash":{},"data":data}) : helper)))
@@ -66,11 +66,18 @@ this["JST"]["handlebars/videography.hbs"] = Handlebars.template({"1":function(de
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
     + "\" target=\"_blank\">"
     + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
-    + "</a></h6>\n          </div>\n        </div>\n      </li>\n      <div id=\"videoModal"
+    + "</a>"
+    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.role : depth0),{"name":"if","hash":{},"fn":this.program(2, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + "</h6>\n          </div>\n        </div>\n      </li>\n      <div id=\"videoModal"
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
     + "\" class=\"reveal-modal large\" data-reveal aria-labelledby=\"videoModalTitle\" aria-hidden=\"true\" role=\"dialog\">\n        <div class=\"modal__video\">\n          <iframe src=\"https://player.vimeo.com/video/"
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
     + "?badge='0'&byline='0'&color='f2002b'&portrait='0'&title='0'\" frameborder=\"0\" width=\"500\" height=\"281\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n        <a class=\"close-reveal-modal\" aria-label=\"Close\">&#9447;</a>\n      </div><!--\n    -->";
+},"2":function(depth0,helpers,partials,data) {
+    var helper;
+
+  return "<br><br>"
+    + this.escapeExpression(((helper = (helper = helpers.role || (depth0 != null ? depth0.role : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"role","hash":{},"data":data}) : helper)));
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var stack1, helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 

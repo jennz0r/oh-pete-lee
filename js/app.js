@@ -161,7 +161,6 @@ var dataContact = {
 var htmlFunction, html;
 
 $(document).ready(function() {
-  // Change cases to live URL before launch
   switch(location.pathname) {
     case "/":
       htmlFunction = JST['handlebars/index.hbs'];
