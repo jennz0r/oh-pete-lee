@@ -131,7 +131,7 @@ var dataNarrative = {
   }, {
     id: '139041671',
     title: 'Johnny Physical Lives',
-    thumbnailUrl: 'https://i.vimeocdn.com/video/534737545.webp?mw=1920&mh=1080&q=70',
+    thumbnailUrl: 'https://i.vimeocdn.com/video/534737545.jpg?mw=1920&mh=1080&q=70',
     role: 'Producer / Cinematographer / Editor'
   }]
 };
