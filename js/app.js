@@ -73,6 +73,22 @@ var dataBranded = {
   title: 'BRANDED',
   description: "",
   videos: [{
+    id: '152381212',
+    title: "Kosta Browne - Obsessed with Pinot Noir",
+    thumbnailUrl: 'http://i.vimeocdn.com/video/552554761.jpg?mw=1920&mh=1080&q=70'
+  }, {
+    id: '152613891',
+    title: "Credit Karma - Chloe’s Apartment",
+    thumbnailUrl: 'http://i.vimeocdn.com/video/552656424.jpg?mw=1920&mh=1080&q=70'
+  }, {
+    id: '152613890',
+    title: "Credit Karma - Bess’s Car",
+    thumbnailUrl: 'http://i.vimeocdn.com/video/552657990.jpg?mw=1920&mh=1080&q=70'
+  }, {
+    id: '129152078',
+    title: "Calm (Director's Cut)",
+    thumbnailUrl: 'http://i.vimeocdn.com/video/520539948.jpg?mw=1920&mh=1080&q=70'
+  }, {
     id: '125626176',
     title: '100 OpenTables: Brand Video',
     thumbnailUrl: 'http://i.vimeocdn.com/video/531211845.jpg?mw=1920&mh=1080&q=70'
@@ -89,16 +105,12 @@ var dataBranded = {
     title: 'Cirq - Russia River Valley',
     thumbnailUrl: 'http://i.vimeocdn.com/video/472364799.jpg?mw=1920&mh=1080&q=70'
   }, {
-    id: '92575084',
-    title: 'Craft - by Cost Plus World Market',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/531212665.jpg?mw=1920&mh=1080&q=70'
-  }, {
     id: '128915836',
     title: 'Calphalon YOURSET Heirloom Tomato Sauce Recipe',
     thumbnailUrl: 'http://i.vimeocdn.com/video/520214113.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '73995049',
-    title: "Robert Mondavi's Coastal Crush (extended cut)",
+    title: "Robert Mondavi's Coastal Crush (Extended Cut)",
     thumbnailUrl: 'http://i.vimeocdn.com/video/455321339.jpg?mw=1920&mh=1080&q=70'
   }]
 };
