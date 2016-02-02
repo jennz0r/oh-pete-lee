@@ -23,23 +23,23 @@ var dataMusic = {
   }, {
     id: '91651414',
     title: 'Atmosphere - Kanye West (Official Music Video)',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/471389381.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/553877161.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '79086655',
     title: 'Extranjero',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/454684232.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/553874062.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '67242039',
     title: 'Patton Oswalt does the Magic Clap',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/439190405.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/553878101.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '62309914',
     title: 'The Uncluded - Delicate Cycle',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/432151595.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/520684049.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '54213282',
     title: 'Wolf Larsen - If I Be Wrong',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/462728100.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/553878374.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '49484881',
     title: 'Aesop Rock - ZZZ Top',
@@ -47,7 +47,7 @@ var dataMusic = {
   }, {
     id: '79146873',
     title: 'Megan Keely - Just Enough Time',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/457106933.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/553876971.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '49483012',
     title: "The Coup's Magic Clap",
@@ -59,7 +59,7 @@ var dataMusic = {
   }, {
     id: '49484882',
     title: 'Aesop Rock - Cycles to Gehenna',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/455321873.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/553878648.jpg?mw=1920&mh=1080&q=70'
   }]
 };
 
@@ -75,19 +75,19 @@ var dataBranded = {
   videos: [{
     id: '152381212',
     title: "Kosta Browne - Obsessed with Pinot Noir",
-    thumbnailUrl: 'http://i.vimeocdn.com/video/552554761.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/553874307.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '152613891',
     title: "Credit Karma - Chloe’s Apartment",
-    thumbnailUrl: 'http://i.vimeocdn.com/video/552656424.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/553874474.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '152613890',
     title: "Credit Karma - Bess’s Car",
-    thumbnailUrl: 'http://i.vimeocdn.com/video/552657990.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/552657692.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '129152078',
     title: "Calm (Director's Cut)",
-    thumbnailUrl: 'http://i.vimeocdn.com/video/520539948.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/553877556.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '125626176',
     title: '100 OpenTables: Brand Video',
@@ -95,7 +95,7 @@ var dataBranded = {
   }, {
     id: '124724818',
     title: 'Sols - Live Your Life',
-    thumbnailUrl: 'https://i.vimeocdn.com/video/514560403.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'https://i.vimeocdn.com/video/553875678.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '108527682',
     title: 'Basis Peak by Intel: Brand Video',
@@ -103,15 +103,15 @@ var dataBranded = {
   }, {
     id: '92594646',
     title: 'Cirq - Russia River Valley',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/472364799.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/553877961.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '128915836',
     title: 'Calphalon YOURSET Heirloom Tomato Sauce Recipe',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/520214113.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/553875239.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '73995049',
     title: "Robert Mondavi's Coastal Crush (Extended Cut)",
-    thumbnailUrl: 'http://i.vimeocdn.com/video/455321339.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/553877384.jpg?mw=1920&mh=1080&q=70'
   }]
 };
 
@@ -127,7 +127,7 @@ var dataNarrative = {
   videos: [{
     id: '79282772',
     title: 'Rope a Dope',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/455321927.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/553875976.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '116523821',
     title: 'Rope A Dope 2',
@@ -135,11 +135,11 @@ var dataNarrative = {
   }, {
     id: '91651414',
     title: 'Atmosphere - Kanye West (Official Music Video)',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/471389381.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/553877161.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '49484881',
     title: 'Aesop Rock - ZZZ Top',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/531213127.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/341463373.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '139041671',
     title: 'Johnny Physical Lives',
