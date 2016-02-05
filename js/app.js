@@ -35,7 +35,7 @@ var dataMusic = {
   }, {
     id: '62309914',
     title: 'The Uncluded - Delicate Cycle',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/520684049.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/432151595.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '54213282',
     title: 'Wolf Larsen - If I Be Wrong',
@@ -99,7 +99,7 @@ var dataBranded = {
   }, {
     id: '108527682',
     title: 'Basis Peak by Intel: Brand Video',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/494060524.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'http://i.vimeocdn.com/video/494060600.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '92594646',
     title: 'Cirq - Russia River Valley',
@@ -143,7 +143,7 @@ var dataNarrative = {
   }, {
     id: '139041671',
     title: 'Johnny Physical Lives',
-    thumbnailUrl: 'https://i.vimeocdn.com/video/534737545.jpg?mw=1920&mh=1080&q=70',
+    thumbnailUrl: '../img/johnny-physical.png',
     role: 'Producer / Cinematographer / Editor'
   }]
 };
