@@ -206,15 +206,6 @@ $(document).ready(function() {
   // Use fit vids to make videos responsive
   $(".modal__video").fitVids();
 
-  
-  // var randomIndexImgURL = Math.floor(Math.random() * 2) + 1;
-  // if (location.pathname !== '/photography/professional/' &&
-  //     location.pathname !== '/photography/personal/' &&
-  //     location.pathname !== '/' ) {
-  //   $('body').css('background-image', 'url(/img/backgrounds/' + randomImgURL + '.jpg)');
-  // }
-  // else
-
   if (location.pathname == '/contact/') {
     $('body').css('background-image', 'url(/img/pete01.jpg)');
   }
@@ -226,27 +217,27 @@ $(document).ready(function() {
   }
 
   $(document).foundation();
+
+  $('.auto-slicky').slick({
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    centerMode: true,
+    centerPadding: '10px',
+    cssEase: 'linear',
+    infinite: true,
+    fade: true,
+    lazyLoad: 'ondemand',
+    slide: 'div',
+    speed: 500,
+    responsive: [{
+      breakpoint: 480,
+      settings: {
+        arrows: false
+      }
+    }]
+  });
 });
-
-// Add shadow only after asset load
-// $(window).load(function() {
-//   $('.video__outer').css('box-shadow', '0 0 0 5px black');
-
-//   if (location.pathname !== '/') {
-//     var docHeight = $(document).height();
-//     $('body').append('<div class="overlay"></div>');
-//     $('.overlay')
-//       .height(docHeight)
-//       .css({
-//          'opacity' : 0.5,
-//          'position': 'absolute',
-//          'top': 0,
-//          'left': 0,
-//          'background-color': 'white',
-//          'width': '100%',
-//       });
-//   }
-// });
 
 
 

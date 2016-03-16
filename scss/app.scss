@@ -339,3 +339,36 @@ div.preloaded-images {
 .close-reveal-modal {
   background-color: black !important;
 }
+
+.slideshow {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+@media (max-width: 480px) {
+  .slideshow {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+
+.slick-slide img {
+  margin: 0 auto;
+  max-height: 100vh;
+}
+
+@media (min-width: 1440px) {
+  p {
+    font-size: 1.25rem
+  }
+}
+
+@media (min-width: 1920px) {
+  p {
+    font-size: 1.4rem
+  }
+}
