@@ -27,7 +27,7 @@ var dataMusic = {
   }, {
     id: '79086655',
     title: 'Extranjero',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/553874062.jpg?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'https://i.vimeocdn.com/video/553876276.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '67242039',
     title: 'Patton Oswalt does the Magic Clap',
