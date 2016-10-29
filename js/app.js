@@ -21,6 +21,18 @@ var dataMusic = {
     title: 'Meklit Hadero feat. Samuel Yirga - Kemekem',
     thumbnailUrl: 'http://i.vimeocdn.com/video/531212273.jpg?mw=1920&mh=1080&q=70'
   }, {
+    id: '178443070',
+    title: 'Y La Bamba - Libre',
+    thumbnailUrl: 'https://i.vimeocdn.com/video/598775184.webp?mw=1920&mh=1080&q=70'
+  }, {
+    id: '178733364',
+    title: 'Be Calm Honcho - Bad Man',186190168
+    thumbnailUrl: 'img/honcho.png'
+  }, {
+    id: '186190168',
+    title: 'Con Brio - Money',
+    thumbnailUrl: 'https://i.vimeocdn.com/video/596159203.webp?mw=1920&mh=1080&q=70'
+  }, {
     id: '91651414',
     title: 'Atmosphere - Kanye West (Official Music Video)',
     thumbnailUrl: 'http://i.vimeocdn.com/video/553877161.jpg?mw=1920&mh=1080&q=70'
@@ -73,9 +85,17 @@ var dataBranded = {
   title: 'BRANDED',
   description: "",
   videos: [{
+    id: '124724818',
+    title: 'Sols - Live Your Life',
+    thumbnailUrl: 'https://i.vimeocdn.com/video/553875678.jpg?mw=1920&mh=1080&q=70'
+  }, {
     id: '152381212',
     title: "Kosta Browne - Obsessed with Pinot Noir",
     thumbnailUrl: 'http://i.vimeocdn.com/video/553874307.jpg?mw=1920&mh=1080&q=70'
+  }, {
+    id: '172646600',
+    title: "Leo - This is Miles",
+    thumbnailUrl: 'https://i.vimeocdn.com/video/578541999.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '152613891',
     title: "Credit Karma - Chloe’s Apartment",
@@ -92,10 +112,6 @@ var dataBranded = {
     id: '125626176',
     title: '100 OpenTables: Brand Video',
     thumbnailUrl: 'http://i.vimeocdn.com/video/531211845.jpg?mw=1920&mh=1080&q=70'
-  }, {
-    id: '124724818',
-    title: 'Sols - Live Your Life',
-    thumbnailUrl: 'https://i.vimeocdn.com/video/553875678.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '108527682',
     title: 'Basis Peak by Intel: Brand Video',
