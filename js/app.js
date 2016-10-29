@@ -26,7 +26,7 @@ var dataMusic = {
     thumbnailUrl: 'https://i.vimeocdn.com/video/598775184.webp?mw=1920&mh=1080&q=70'
   }, {
     id: '178733364',
-    title: 'Be Calm Honcho - Bad Man',186190168
+    title: 'Be Calm Honcho - Bad Man',
     thumbnailUrl: 'img/honcho.png'
   }, {
     id: '186190168',
