@@ -27,7 +27,7 @@ var dataMusic = {
   }, {
     id: '178733364',
     title: 'Be Calm Honcho - Bad Man',
-    thumbnailUrl: '../img/honcho.png'
+    thumbnailUrl: '../img/honcho.jpg'
   }, {
     id: '186190168',
     title: 'Con Brio - Money',
@@ -159,7 +159,7 @@ var dataNarrative = {
   }, {
     id: '139041671',
     title: 'Johnny Physical Lives',
-    thumbnailUrl: '../img/johnny-physical.png',
+    thumbnailUrl: '../img/johnny-physical.jpg',
     role: 'Producer / Cinematographer / Editor'
   }]
 };
