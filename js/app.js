@@ -149,14 +149,6 @@ var dataNarrative = {
     title: 'Rope A Dope 2',
     thumbnailUrl: 'http://i.vimeocdn.com/video/503032632.jpg?mw=1920&mh=1080&q=70'
   }, {
-    id: '91651414',
-    title: 'Atmosphere - Kanye West (Official Music Video)',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/553877161.jpg?mw=1920&mh=1080&q=70'
-  }, {
-    id: '49484881',
-    title: 'Aesop Rock - ZZZ Top',
-    thumbnailUrl: 'http://i.vimeocdn.com/video/341463373.jpg?mw=1920&mh=1080&q=70'
-  }, {
     id: '139041671',
     title: 'Johnny Physical Lives',
     thumbnailUrl: '../img/johnny-physical.jpg',
