@@ -23,7 +23,7 @@ var dataMusic = {
   }, {
     id: '178443070',
     title: 'Y La Bamba - Libre',
-    thumbnailUrl: 'https://i.vimeocdn.com/video/598775184.webp?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'https://i.vimeocdn.com/video/598775184.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '178733364',
     title: 'Be Calm Honcho - Bad Man',
@@ -31,7 +31,7 @@ var dataMusic = {
   }, {
     id: '186190168',
     title: 'Con Brio - Money',
-    thumbnailUrl: 'https://i.vimeocdn.com/video/596159203.webp?mw=1920&mh=1080&q=70'
+    thumbnailUrl: 'https://i.vimeocdn.com/video/596159203.jpg?mw=1920&mh=1080&q=70'
   }, {
     id: '91651414',
     title: 'Atmosphere - Kanye West (Official Music Video)',
