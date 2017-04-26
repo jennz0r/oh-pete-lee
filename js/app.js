@@ -149,6 +149,7 @@ var dataNarrative = {
     title: 'Rope A Dope 2',
     thumbnailUrl: 'http://i.vimeocdn.com/video/503032632.jpg?mw=1920&mh=1080&q=70'
   }, {
+    johnny: true,
     id: '139041671',
     title: 'Johnny Physical Lives',
     thumbnailUrl: '../img/johnny-physical.jpg',
