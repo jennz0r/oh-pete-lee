@@ -32,4 +32,6 @@ And you're set!
 
 Run a simple python server `python -m SimpleHTTPServer 8000` in the repo and you should be able to get everything up and running even though the URLS are live in app.js.
 
+Run `grunt handlebars` to compile .hbs to HTML to view on localhost.
+
 Be sure to add handlebars-templates.js to the production version of the site!
