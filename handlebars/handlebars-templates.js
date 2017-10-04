@@ -48,49 +48,59 @@ this["JST"]["handlebars/videography.hbs"] = Handlebars.template({"1":function(de
     + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.johnny : depth0),{"name":"if","hash":{},"fn":this.program(2, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + "\n        <div class=\"video__outer\">\n          <img src=\""
     + alias3(((helper = (helper = helpers.thumbnailUrl || (depth0 != null ? depth0.thumbnailUrl : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"thumbnailUrl","hash":{},"data":data}) : helper)))
-    + "\">\n          <div class=\"video__overlay\" "
+    + "\">\n          <div class=\"video__overlay\" \n"
     + ((stack1 = helpers.unless.call(depth0,(depth0 != null ? depth0.johnny : depth0),{"name":"unless","hash":{},"fn":this.program(4, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
-    + ">\n            <h6>"
-    + ((stack1 = helpers.unless.call(depth0,(depth0 != null ? depth0.johnny : depth0),{"name":"unless","hash":{},"fn":this.program(6, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
-    + "\n              "
+    + "          >\n            <h6>\n"
+    + ((stack1 = helpers.unless.call(depth0,(depth0 != null ? depth0.special : depth0),{"name":"unless","hash":{},"fn":this.program(6, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + "                  "
     + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
-    + "\n            "
-    + ((stack1 = helpers.unless.call(depth0,(depth0 != null ? depth0.johnny : depth0),{"name":"unless","hash":{},"fn":this.program(8, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = helpers.unless.call(depth0,(depth0 != null ? depth0.special : depth0),{"name":"unless","hash":{},"fn":this.program(8, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + "            "
     + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.role : depth0),{"name":"if","hash":{},"fn":this.program(10, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
-    + "</h6>\n          </div>\n        </div>\n        "
-    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.johnny : depth0),{"name":"if","hash":{},"fn":this.program(8, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + "\n            </h6>\n          </div>\n        </div>\n        "
+    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.johnny : depth0),{"name":"if","hash":{},"fn":this.program(12, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + "\n      </li>\n"
-    + ((stack1 = helpers.unless.call(depth0,(depth0 != null ? depth0.johnny : depth0),{"name":"unless","hash":{},"fn":this.program(12, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.unless.call(depth0,(depth0 != null ? depth0.special : depth0),{"name":"unless","hash":{},"fn":this.program(14, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.hero : depth0),{"name":"if","hash":{},"fn":this.program(16, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + "<!--\n    -->";
 },"2":function(depth0,helpers,partials,data) {
     return "<a href=\"https://vimeo.com/blog/post/staff-pick-premiere-johnny-physical-lives\" target=\"_blank\" class=\"johnny__overlay\">";
 },"4":function(depth0,helpers,partials,data) {
     var helper;
 
-  return "data-reveal-id=\"videoModal"
+  return "              data-reveal-id=\"videoModal"
     + this.escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
-    + "\"";
+    + "\"\n";
 },"6":function(depth0,helpers,partials,data) {
     var helper;
 
-  return "<a href=\"https://vimeo.com/"
+  return "                <a href=\"https://vimeo.com/"
     + this.escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
-    + "\" target=\"_blank\">";
+    + "\" target=\"_blank\">\n";
 },"8":function(depth0,helpers,partials,data) {
-    return "</a>";
+    return "                </a>\n";
 },"10":function(depth0,helpers,partials,data) {
     var helper;
 
   return "<br><br>"
     + this.escapeExpression(((helper = (helper = helpers.role || (depth0 != null ? depth0.role : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"role","hash":{},"data":data}) : helper)));
 },"12":function(depth0,helpers,partials,data) {
+    return "</a>";
+},"14":function(depth0,helpers,partials,data) {
     var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
   return "        <div id=\"videoModal"
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
     + "\" class=\"reveal-modal large\" data-reveal aria-labelledby=\"videoModalTitle\" aria-hidden=\"true\" role=\"dialog\">\n          <div class=\"modal__video\">\n            <iframe src=\"https://player.vimeo.com/video/"
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
-    + "?badge='0'&byline='0'&color='f2002b'&portrait='0'&title='0'\" frameborder=\"0\" width=\"500\" height=\"281\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n          </div>\n          <a class=\"close-reveal-modal\" aria-label=\"Close\">&#9447;</a>\n        </div>\n      ";
+    + "?badge='0'&byline='0'&color='f2002b'&portrait='0'&title='0'\" frameborder=\"0\" width=\"500\" height=\"281\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n          </div>\n          <a class=\"close-reveal-modal\" aria-label=\"Close\">&#9447;</a>\n        </div>\n";
+},"16":function(depth0,helpers,partials,data) {
+    var helper;
+
+  return "        <div id=\"videoModal"
+    + this.escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
+    + "\" class=\"reveal-modal large\" data-reveal aria-labelledby=\"videoModalTitle\" aria-hidden=\"true\" role=\"dialog\">\n          <div class=\"modal__video\">\n            <h5>Coming Soon</h5>\n            <img src=\"../img/dontbeahero01.jpg\">\n            <img src=\"../img/dontbeahero02.jpg\">\n            <img src=\"../img/dontbeahero03.jpg\">\n          </div>\n          <a class=\"close-reveal-modal\" aria-label=\"Close\">&#9447;</a>\n        </div>\n      ";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var stack1, helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
@@ -101,5 +111,5 @@ this["JST"]["handlebars/videography.hbs"] = Handlebars.template({"1":function(de
     + alias3(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"description","hash":{},"data":data}) : helper)))
     + "</p> -->\n</div>\n<div class=\"row\">\n  <div class=\"columns\">\n    <ul class=\"small-block-grid-1 medium-block-grid-2 xlarge-block-grid-3\">\n      "
     + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.videos : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
-    + "\n    </ul>\n  </div>\n</div>";
+    + "\n    </ul>\n  </div>\n</div>\n";
 },"usePartial":true,"useData":true});

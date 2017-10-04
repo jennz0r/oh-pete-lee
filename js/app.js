@@ -140,7 +140,20 @@ var dataNarrative = {
   contact_url: '../contact',
   title: 'NARRATIVE',
   description: "",
-  videos: [{
+  videos: [ {
+    special: true,
+    hero: true,
+    id: '',
+    title: "Don't Be a Hero",
+    thumbnailUrl: '../img/dontbeahero_teaser.jpg'
+  }, {
+    special: true,
+    johnny: true,
+    id: '139041671',
+    title: 'Johnny Physical Lives',
+    thumbnailUrl: '../img/johnny-physical.jpg',
+    role: 'Producer / Cinematographer / Editor'
+  }, {
     id: '79282772',
     title: 'Rope a Dope',
     thumbnailUrl: 'http://i.vimeocdn.com/video/553875976.jpg?mw=1920&mh=1080&q=70'
@@ -148,12 +161,6 @@ var dataNarrative = {
     id: '116523821',
     title: 'Rope A Dope 2',
     thumbnailUrl: 'http://i.vimeocdn.com/video/503032632.jpg?mw=1920&mh=1080&q=70'
-  }, {
-    johnny: true,
-    id: '139041671',
-    title: 'Johnny Physical Lives',
-    thumbnailUrl: '../img/johnny-physical.jpg',
-    role: 'Producer / Cinematographer / Editor'
   }]
 };
 
