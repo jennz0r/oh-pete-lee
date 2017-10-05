@@ -2,3 +2,7 @@
 /css/*
 /bower_components/*
 /node_modules/*
+.sass-cache
+npm-debug.log
+package-lock.json
+scss/normalize.scss
