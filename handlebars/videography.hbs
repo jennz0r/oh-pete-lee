@@ -9,47 +9,26 @@
     <ul class="small-block-grid-1 medium-block-grid-2 xlarge-block-grid-3">
       {{#each videos}}<!--
    --><li>
-        {{#if johnny}}<a href="https://vimeo.com/blog/post/staff-pick-premiere-johnny-physical-lives" target="_blank" class="johnny__overlay">{{/if}}
+        {{#if johnny}}<a href="https://vimeo.com/blog/post/staff-pick-premiere-johnny-physical-lives" target="_blank" rel="noopener noreferrer" class="johnny__overlay">{{/if}}
         <div class="video__outer">
           <img src="{{thumbnailUrl}}">
-          <div class="video__overlay" 
-            {{#unless johnny}}
-              data-reveal-id="videoModal{{id}}"
-            {{/unless}}
-          >
-            <h6>
-              {{#unless special}}
-                <a href="https://vimeo.com/{{id}}" target="_blank">
-              {{/unless}}
-                  {{title}}
-              {{#unless special}}
-                </a>
-              {{/unless}}
-            {{#if role}}<br><br>{{role}}{{/if}}
-            </h6>
+          <div class="video__overlay" {{#unless johnny}}data-reveal-id="videoModal{{id}}"{{/unless}}>
+            <h6>{{#unless special}}<a href="https://vimeo.com/{{id}}" target="_blank" rel="noopener noreferrer">{{/unless}}
+              {{#if hero}}<a href="https://player.vimeo.com/video/223838773" target="_blank" rel="noopener noreferrer">{{/if}}
+              {{title}}
+            {{#unless johnny}}</a>{{/unless}}{{#if role}}<br><br>{{role}}{{/if}}</h6>
           </div>
         </div>
-        {{#if johnny}}</a>{{/if}}
+        {{#if special}}</a>{{/if}}
       </li>
-      {{#unless special}}
+      {{#unless johnny}}
         <div id="videoModal{{id}}" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
           <div class="modal__video">
             <iframe src="https://player.vimeo.com/video/{{id}}?badge='0'&byline='0'&color='f2002b'&portrait='0'&title='0'" frameborder="0" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
           <a class="close-reveal-modal" aria-label="Close">&#9447;</a>
         </div>
-      {{/unless}}
-      {{#if hero}}
-        <div id="videoModal{{id}}" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
-          <div class="modal__video">
-            <h5>Coming Soon</h5>
-            <img src="../img/dontbeahero01.jpg">
-            <img src="../img/dontbeahero02.jpg">
-            <img src="../img/dontbeahero03.jpg">
-          </div>
-          <a class="close-reveal-modal" aria-label="Close">&#9447;</a>
-        </div>
-      {{/if}}<!--
+      {{/unless}}<!--
     -->{{/each}}
     </ul>
   </div>
