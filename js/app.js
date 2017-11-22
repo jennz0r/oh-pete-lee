@@ -186,6 +186,17 @@ var dataContact = {
   description: ""
 };
 
+var dataHero = {
+  home_url: '../../',
+  music_url: '../../music',
+  branded_url: '../../branded',
+  narrative_url: '../../narrative',
+  photography_url: '../photography',
+  contact_url: '',
+  title: "Don't Be a Hero",
+  description: ""
+}
+
 var htmlFunction, html;
 
 $(document).ready(function() {
@@ -213,6 +224,10 @@ $(document).ready(function() {
     case "/contact/":
       htmlFunction = JST['handlebars/contact.hbs'];
       html = htmlFunction(dataContact);
+      break;
+    case "/dontbeahero/":
+      htmlFunction = JST['handlebars/dontbeahero.hbs'];
+      html = htmlFunction(dataHero);
       break;
   };
 

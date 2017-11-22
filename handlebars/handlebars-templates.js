@@ -27,6 +27,13 @@ this["JST"]["handlebars/contact.hbs"] = Handlebars.template({"compiler":[6,">= 2
     + "</h1>\n    <div class=\"bio  mv+\">\n      <h6 class=\"header-custom\">Production Blog</h6>\n      <a href=\"http://enterthehero.com/\">Enter the Hero</a>\n      <h6 class=\"header-custom\">Production Company</h6>\n      <a href=\"http://www.wearescandinavia.com/\">Scandinavia</a><br><br>\n      <em><a href=\"mailto:pete@ohpetelee.com\">pete@ohpetelee.com</a></em><span> | <em>617.784.1886</em></span>\n    </div>\n  </div>\n</div>";
 },"usePartial":true,"useData":true});
 
+this["JST"]["handlebars/dontbeahero.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "")
+    + "\n<div class=\"row  mv4x  ph2x  ph\">\n  <h1 class=\"title\">COMING SOON</h1>\n  <div class=\"mv2x\">\n    <div class=\"video__outer\">\n      <img src=\"https://i.vimeocdn.com/video/658203166.jpg?mw=1920&mh=1080\">\n      <div class=\"video__overlay\" data-reveal-id=\"videoModal223838773\">\n        <h6><a href=\"https://vimeo.com/223838773\" target=\"_blank\" rel=\"noopener noreferrer\">PLAY TRAILER</a></h6>\n      </div>\n    </div>\n    <div id=\"videoModal223838773\" class=\"reveal-modal large\" data-reveal aria-labelledby=\"videoModalTitle\" aria-hidden=\"true\" role=\"dialog\">\n      <div class=\"modal__video\">\n        <iframe src=\"https://player.vimeo.com/video/223838773\" width=\"640\" height=\"360\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n      </div>\n      <a class=\"close-reveal-modal\" aria-label=\"Close\">&#9447;</a>\n    </div>\n  </div>\n  <p class=\"mv2x\">Lizzy Jo, who still lives with mom at age 45, battles her loneliness and boredom by robbing banks in the guise of a cowboy on her lunch break. But after the adrenaline rush wears off, she still has to deal with her deeply unhappy life. Inspired by a true story. Starring Missi Pyle.</p>\n</div>";
+},"usePartial":true,"useData":true});
+
 this["JST"]["handlebars/index.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var stack1;
 
