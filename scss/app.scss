@@ -1,5 +1,5 @@
 @import "settings";
-@import "normalize";
+// @import "normalize";
 // @import "foundation";
 
 // Or selectively include components
@@ -308,7 +308,7 @@ div.preloaded-images {
 //  box-shadow: 0 0 0 5px #111;
 }
 
-.video__overlay, .johnny__overlay {
+.video__overlay {
   position: absolute;
   top: 0;
   left: 0;
