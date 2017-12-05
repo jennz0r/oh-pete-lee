@@ -145,7 +145,7 @@ var dataNarrative = {
     special: true,
     id: '223838773',
     title: "Don't Be a Hero",
-    thumbnailUrl: 'https://i.vimeocdn.com/video/658203166.jpg?mw=1920&mh=1080'
+    thumbnailUrl: '../img/dbah.jpg'
   }, {
     johnny: true,
     special: true,
