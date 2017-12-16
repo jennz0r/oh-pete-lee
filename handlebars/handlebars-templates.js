@@ -24,7 +24,7 @@ this["JST"]["handlebars/contact.hbs"] = Handlebars.template({"compiler":[6,">= 2
   return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "")
     + "\n<div class=\"row  mv  ph\">\n  <div class=\"small-12  medium-6  large-5  small-centered  medium-uncentered  columns\">\n    <h1 class=\"title\">"
     + this.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
-    + "</h1>\n    <div class=\"bio  mv+\">\n      <h6 class=\"header-custom\">Production Blog</h6>\n      <a href=\"http://enterthehero.com/\">Enter the Hero</a>\n      <h6 class=\"header-custom\">Production Company</h6>\n      <a href=\"http://www.wearescandinavia.com/\">Scandinavia</a><br><br>\n      <em><a href=\"mailto:pete@ohpetelee.com\">pete@ohpetelee.com</a></em><span> | <em>617.784.1886</em></span>\n    </div>\n  </div>\n</div>";
+    + "</h1>\n    <div class=\"bio  mv\">\n      <h6 class=\"header-custom\">Representation</h6>\n      <p>Aaron Brown (Avalon)</p>\n      <a href=\"mailto:ABrown@avalon-entertainment.com\">ABrown@avalon-entertainment.com</a><br/>\n      <a href=\"tel:1-310-424-1716\">(310)424-1716</a>\n      <div class=\"mv\">\n        <h6 class=\"header-custom\">For All Other Inquiries</h6>\n        <a href=\"mailto:pete@ohpetelee.com\">pete @ ohpetelee.com</a>\n      </div>\n    </div>\n  </div>\n</div>\n";
 },"usePartial":true,"useData":true});
 
 this["JST"]["handlebars/dontbeahero.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
