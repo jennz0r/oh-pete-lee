@@ -10,12 +10,17 @@
     </ul>
 
     <section class="top-bar-section">
-      <!-- Right Nav Section -->
       <ul class="right">
         <li><a href="{{music_url}}">Music</a></li>
         <li><a href="{{branded_url}}">Branded</a></li>
         <li><a href="{{narrative_url}}">Narrative</a></li>
-        <li><a href="{{photography_url}}">Photography</a></li>
+        <li class="has-dropdown">
+          <a href="#">Photography</a>
+          <ul class="dropdown">
+            <li><a href="{{photo_works_url}}">Works</a></li>
+            <li><a href="{{photo_food_url}}">Food</a></li>
+          </ul>
+        </li>
         <li><a href="{{contact_url}}">Contact</a></li>
       </ul>
     </section>

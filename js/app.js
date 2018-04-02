@@ -3,7 +3,8 @@ var dataIndex = {
 	music_url: 'music',
 	branded_url: 'branded',
 	narrative_url: 'narrative',
-  photography_url: 'photography',
+  photo_works_url: 'photography/works',
+  photo_food_url: 'photography/food',
   contact_url: 'contact'
 };
 
@@ -12,7 +13,8 @@ var dataMusic = {
   music_url: '',
   branded_url: '../branded',
   narrative_url: '../narrative',
-  photography_url: '../photography',
+  photo_works_url: '../photography/works',
+  photo_food_url: '../photography/food',
   contact_url: '../contact',
   title: 'MUSIC',
   description: "",
@@ -80,7 +82,8 @@ var dataBranded = {
   music_url: '../music',
   branded_url: '',
   narrative_url: '../narrative',
-  photography_url: '../photography',
+  photo_works_url: '../photography/works',
+  photo_food_url: '../photography/food',
   contact_url: '../contact',
   title: 'BRANDED',
   description: "",
@@ -136,7 +139,8 @@ var dataNarrative = {
   music_url: '../music',
   branded_url: '../branded',
   narrative_url: '',
-  photography_url: '../photography',
+  photo_works_url: '../photography/works',
+  photo_food_url: '../photography/food',
   contact_url: '../contact',
   title: 'NARRATIVE',
   description: "",
@@ -164,14 +168,27 @@ var dataNarrative = {
   }]
 };
 
-var dataPhotography = {
+var dataWorksPhotography = {
   home_url: '../../',
   music_url: '../../music',
   branded_url: '../../branded',
   narrative_url: '../../narrative',
-  photography_url: '',
+  photo_works_url: '',
+  photo_food_url: '../food',
   contact_url: '../../contact',
-  title: 'PHOTOGRAPHY',
+  title: 'PHOTOGRAPHY - WORKS',
+  description: ""
+};
+
+var dataFoodPhotography = {
+  home_url: '../../',
+  music_url: '../../music',
+  branded_url: '../../branded',
+  narrative_url: '../../narrative',
+  photo_works_url: '../works',
+  photo_food_url: '',
+  contact_url: '../../contact',
+  title: 'PHOTOGRAPHY - FOOD',
   description: ""
 };
 
@@ -180,7 +197,8 @@ var dataContact = {
   music_url: '../../music',
   branded_url: '../../branded',
   narrative_url: '../../narrative',
-  photography_url: '../photography',
+  photo_works_url: '../photography/works',
+  photo_food_url: '../photography/food',
   contact_url: '',
   title: 'CONTACT',
   description: ""
@@ -191,7 +209,8 @@ var dataHero = {
   music_url: '../../music',
   branded_url: '../../branded',
   narrative_url: '../../narrative',
-  photography_url: '../photography',
+  photo_works_url: '../photography/works',
+  photo_food_url: '../photography/food',
   contact_url: '',
   title: "Don't Be a Hero",
   description: ""
@@ -217,9 +236,13 @@ $(document).ready(function() {
       htmlFunction = JST['handlebars/videography.hbs'];
       html = htmlFunction(dataNarrative);
       break;
-    case "/photography/":
-      htmlFunction = JST['handlebars/photography.hbs'];
-      html = htmlFunction(dataPhotography);
+    case "/photography/works/":
+      htmlFunction = JST['handlebars/photography_works.hbs'];
+      html = htmlFunction(dataWorksPhotography);
+      break;
+    case "/photography/food/":
+      htmlFunction = JST['handlebars/photography_food.hbs'];
+      html = htmlFunction(dataFoodPhotography);
       break;
     case "/contact/":
       htmlFunction = JST['handlebars/contact.hbs'];
@@ -240,7 +263,7 @@ $(document).ready(function() {
   if (location.pathname == '/contact/') {
     $('body').css('background-image', 'url(/img/pete01.jpg)');
   }
-  else if (location.pathname == '/photography/') {
+  else if (location.pathname === '/photography/works/' || location.pathname === '/photography/food/') {
     $('body').css('background-color', '#000');
   }
   else {
@@ -248,26 +271,6 @@ $(document).ready(function() {
   }
 
   $(document).foundation();
-
-  $('.auto-slicky').slick({
-    arrows: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    centerMode: true,
-    centerPadding: '10px',
-    cssEase: 'linear',
-    infinite: true,
-    fade: true,
-    lazyLoad: 'ondemand',
-    slide: 'div',
-    speed: 500,
-    responsive: [{
-      breakpoint: 480,
-      settings: {
-        arrows: false
-      }
-    }]
-  });
 });
 
 
