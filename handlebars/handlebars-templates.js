@@ -44,17 +44,25 @@ this["JST"]["handlebars/index.hbs"] = Handlebars.template({"compiler":[6,">= 2.0
 },"usePartial":true,"useData":true});
 
 this["JST"]["handlebars/photography_food.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1;
+    var stack1, helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
   return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "")
-    + "\n<div class=\"row\">\n    <div class=\"small-12 centered columns\">\n        <a data-flickr-embed=\"true\" data-context=\"true\"  href=\"https://www.flickr.com/photos/nomoretitanic/29055941905/in/album-72157635232648764/\" title=\"Pink Zebra - Tsukunes\"><img src=\"https://farm9.staticflickr.com/8418/29055941905_44c1dda753_k.jpg\" width=\"2048\" height=\"1303\" alt=\"Pink Zebra - Tsukunes\"></a>\n    </div>\n</div>\n";
+    + "\n<div class=\"row  mv  ph\">\n  <h1 class=\"title\">"
+    + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
+    + "</h1>\n  <!-- <p>"
+    + alias3(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"description","hash":{},"data":data}) : helper)))
+    + "</p> -->\n</div>\n<div class=\"row\">\n    <div class=\"small-12 centered columns\">\n        <a data-flickr-embed=\"true\" data-context=\"true\"  href=\"https://www.flickr.com/photos/nomoretitanic/29055941905/in/album-72157635232648764/\" title=\"Pink Zebra - Tsukunes\"><img src=\"https://farm9.staticflickr.com/8418/29055941905_44c1dda753_k.jpg\" width=\"2048\" height=\"1303\" alt=\"Pink Zebra - Tsukunes\"></a>\n    </div>\n</div>\n";
 },"usePartial":true,"useData":true});
 
 this["JST"]["handlebars/photography_works.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1;
+    var stack1, helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
   return ((stack1 = this.invokePartial(partials.nav,depth0,{"name":"nav","data":data,"helpers":helpers,"partials":partials})) != null ? stack1 : "")
-    + "\n<div class=\"row\">\n  <div class=\"small-12 centered columns\">\n    <a data-flickr-embed=\"true\" data-context=\"true\"  href=\"https://www.flickr.com/photos/nomoretitanic/8360441478/in/album-72157632464340437/\" title=\"Chasing Lanterns\"><img src=\"https://farm9.staticflickr.com/8354/8360441478_a8f0e4f279_k.jpg\" width=\"2048\" height=\"996\" alt=\"Chasing Lanterns\"></a>\n  </div>\n</div>\n";
+    + "\n<div class=\"row  mv  ph\">\n  <h1 class=\"title\">"
+    + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
+    + "</h1>\n  <!-- <p>"
+    + alias3(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"description","hash":{},"data":data}) : helper)))
+    + "</p> -->\n</div>\n<div class=\"row\">\n  <div class=\"small-12 centered columns\">\n    <a data-flickr-embed=\"true\" data-context=\"true\"  href=\"https://www.flickr.com/photos/nomoretitanic/8360441478/in/album-72157632464340437/\" title=\"Chasing Lanterns\"><img src=\"https://farm9.staticflickr.com/8354/8360441478_a8f0e4f279_k.jpg\" width=\"2048\" height=\"996\" alt=\"Chasing Lanterns\"></a>\n  </div>\n</div>\n";
 },"usePartial":true,"useData":true});
 
 this["JST"]["handlebars/videography.hbs"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {

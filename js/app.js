@@ -176,7 +176,7 @@ var dataWorksPhotography = {
   photo_works_url: '',
   photo_food_url: '../food',
   contact_url: '../../contact',
-  title: 'PHOTOGRAPHY - WORKS',
+  title: 'WORKS',
   description: ""
 };
 
@@ -188,7 +188,7 @@ var dataFoodPhotography = {
   photo_works_url: '../works',
   photo_food_url: '',
   contact_url: '../../contact',
-  title: 'PHOTOGRAPHY - FOOD',
+  title: 'FOOD',
   description: ""
 };
 
