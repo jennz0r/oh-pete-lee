@@ -19,6 +19,14 @@ var dataMusic = {
   title: 'MUSIC',
   description: "",
   videos: [{
+    id: '263439326',
+    title: 'Meklit - Supernova',
+    thumbnailUrl: 'http://i.vimeocdn.com/video/693116090.jpg?mw=1920&mh=1080'
+  }, {
+    id: '289616142',
+    title: 'Con Brio - Body Language',
+    thumbnailUrl: 'http://i.vimeocdn.com/video/725478442.jpg?mw=1920&mh=1080'
+  },{
     id: '120522773',
     title: 'Meklit Hadero feat. Samuel Yirga - Kemekem',
     thumbnailUrl: 'http://i.vimeocdn.com/video/531212273.jpg?mw=1920&mh=1080'
