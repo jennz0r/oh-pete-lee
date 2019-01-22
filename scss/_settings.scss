@@ -91,6 +91,11 @@ $include-html-global-classes: $include-html-classes;
     src: url('../rockwell.ttf');
 }
 
+@font-face {
+    font-family: levi;
+    src: url('../LeviRebrushed.ttf');
+}
+
 // We use these to define default font stacks
 $font-family-sans-serif: rock, Futura, 'Trebuchet MS', Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
