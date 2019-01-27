@@ -155,9 +155,9 @@ var dataNarrative = {
   videos: [{
     hero: true,
     special: true,
-    id: '223838773',
+    id: '312878741',
     title: "Don't Be a Hero",
-    thumbnailUrl: '../img/dbah.jpg'
+    thumbnailUrl: '../img/dbah.png'
   }, {
     johnny: true,
     special: true,
